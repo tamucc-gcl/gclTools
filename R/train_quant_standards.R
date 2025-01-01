@@ -1,4 +1,4 @@
-train_standards <- function (quant_data, model = c("kit_reference", "linear", "power")) {
+train_quant_standards <- function (quant_data, model = c("kit_reference", "linear", "power"), remove_standard = F) {
 
   # Step 1: Extract the standard data frame and modify columns
   std <- quant_data$standard %>%
@@ -35,7 +35,24 @@ train_standards <- function (quant_data, model = c("kit_reference", "linear", "p
   std <- std %>%
     mutate (zeroed_rfu = rfu - background_rfu)
 
-  ## Step 4: Fit the model
+  # Step 4 [OPTIONAL]: Remove standard to improve model fit
+  if (!isFALSE (remove_standard)) {
+    # Check if the input is a single value or a vector
+    standards_to_remove <- as.character (remove_standard)
+
+    # Validate that all specified standards exist in the dataset
+    missing_standards <- setdiff(standards_to_remove, std$sample_id)
+    if (length(missing_standards) > 0) {
+      stop ("The following standard/s to remove do not exist in the dataset: ",
+            paste(missing_standards, collapse = ", "))
+    }
+
+    # Filter out the specified standards
+    message("Removing the following standards: ", paste(standards_to_remove, collapse = ", "))
+    std <- std %>% filter(!sample_id %in% standards_to_remove)
+  }
+
+  # Step 5: Fit the model
 
   model <- match.arg (model)  ## Ensure the model option is valid; this also takes the first argument as the default
 
@@ -66,6 +83,8 @@ train_standards <- function (quant_data, model = c("kit_reference", "linear", "p
   message("Coefficients: ", paste(names(coefficients), round(coefficients, 4), sep = " = ", collapse = ", "))
   message("R-squared: ", round(r_squared, 4))
 
+  # Step 6. Plot the model
+
   ## Construct regression equation string for plot subtitle
   subtitle <- if (model == "power") {
     # Convert to y = a * x^b form for power model
@@ -73,19 +92,19 @@ train_standards <- function (quant_data, model = c("kit_reference", "linear", "p
     b <- coefficients[2]       # b remains the same
     paste0(
       "Model: y = ", round(a, 4), " * x^", round(b, 4), "; ",
-      "R² = ", round(r_squared, 4)
+      "R2 = ", round(r_squared, 4)
     )
   } else if (model == "linear") {
     paste0(
       "Model: y = ", round(coefficients[1], 4),
       " + ", round(coefficients[2], 4), " * x; ",
-      "R² = ", round(r_squared, 4)
+      "R2 = ", round(r_squared, 4)
     )
   } else {
     paste0(
       "Model: y = ", round(coefficients[1], 4),
       " * x; ",
-      "R² = ", round(r_squared, 4)
+      "R2 = ", round(r_squared, 4)
     )
   }
 
@@ -102,11 +121,14 @@ train_standards <- function (quant_data, model = c("kit_reference", "linear", "p
     theme_bw()
   print (gg)
 
+  ## Extract function output
 
   return (list (
+    background_rfu = background_rfu,
     standard = std,
     model_fit = fit,
-    r_squared = r_squared)
+    r_squared = r_squared,
+    plot = gg)
   )
 
 }

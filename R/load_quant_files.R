@@ -1,4 +1,50 @@
-load_files_for_quant <- function (raw_data, plate_map) {
+#' Analyze flourescent data
+#'
+#' @description
+#' Prepare the raw data files for fluorescence analysis. This function reads the raw data and plate map, validates the file format and data structure, merges the files, and then prepares a list that separates the samples from the standards.
+#'
+#' This is the first step in a series of functions for analyzing fluorescent data.
+#'
+#' @import tidyverse
+#' @import janitor
+#'
+#' @param raw_data
+#' Raw plate reader data saved as a comma-separated value (csv) file. This is the file exported from the SpectraMax software. It contains the well and fluorescence information. This file should not be manipulated once it has been exported.
+#'
+#' @param plate_map
+#' This contains the information on how the samples were laid out in the 364-well plate and its associated metadata. This file follows a specific data structure. The following columns are expected:
+#'
+#' - plate_id: Name of the sample plate/strip that has been assayed. All standards used in the assay should be named "standard".
+#'
+#'
+#' - sample_id: Name of the samples in the plate. This usually corresponds to well position. Standards used in this assay should be named based on the concentration (ng/ul) used.
+#'
+#'
+#' - replicate: A numeric value containing the replicate used in the assay. A value of 2 is expected for "double-quants"
+#'
+#'
+#' - quant_row: A letter indicating the row of the sample in the quant plate.
+#'
+#'
+#' - quant_column: A number indicating the column of the sample in the quant plate.
+#'
+#'
+#' - sample_volume: A number indicating the volume (uL) of samples and standards used in the assay.
+#'
+#' @details
+#' Additional details...
+#'
+#' @returns Returns a list containing two data frames: sample and standard
+#' @export
+#'
+#' @examples
+#' # Import data files
+#' raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
+#' plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
+#'
+#' quant_data <- load_quant_files(raw_data, plate_map)
+
+load_quant_files <- function (raw_data, plate_map) {
 
   # Step 1. Validate input files
   if (!file.exists(raw_data)) {
@@ -9,22 +55,7 @@ load_files_for_quant <- function (raw_data, plate_map) {
     stop ("The specified plate map file does not exist.")
   }
 
-  # Step 2 Load required libraries
-  required_packages <- c("tidyverse", "janitor")
-
-  ## Helper funtion to ensure required packages are installed
-  check_and_load_packages <- function(packages) {
-    for (pkg in packages) {
-      if (!requireNamespace(pkg, quietly = TRUE)) {
-        install.packages(pkg)
-      }
-      library(pkg, character.only = TRUE)
-    }
-  }
-
-  check_and_load_packages(required_packages)
-
-  # Step 3: Read input files
+  # Step 2: Read input files
 
   ## Check if the provided file are csv files.
   if (!grepl("\\.csv$", raw_data, ignore.case = TRUE)) {
@@ -38,7 +69,7 @@ load_files_for_quant <- function (raw_data, plate_map) {
 
   plate_map_df <- read.csv (plate_map) %>% clean_names()
 
-  # Step 4: Data validation
+  # Step 3: Data validation
   required_raw_cols <- c("sample", "wells", "value", "r")
   required_plate_cols <- c("plate_id", "sample_id", "replicate", "quant_row", "quant_column", "sample_volume")
 
@@ -65,7 +96,7 @@ load_files_for_quant <- function (raw_data, plate_map) {
     }
   }
 
-  # Step 5: Report the number of standards used and their concentrations
+  # Step 4: Report the number of standards used and their concentrations
   standard_count <- plate_map_df %>% filter (plate_id == "standard") %>% nrow()
   message (paste(standard_count, "standards detected"))
 
@@ -75,7 +106,7 @@ load_files_for_quant <- function (raw_data, plate_map) {
   message(paste("The standards used (in ng/ul) are:", paste(standard_samples, collapse = ", ")))
 
 
-  # Step 6: Merge data frames and rename "value" to "rfu"
+  # Step 5: Merge data frames and rename "value" to "rfu"
   quant_data <-
     left_join(plate_map_df, raw_data_df, by = "wells") %>%
     rename (rfu = value) %>%
