@@ -31,18 +31,20 @@
 #'
 #' - sample_volume: numeric. Indicates the volume (uL) of samples and standards used in the assay.
 #'
-#' @details
-#' Additional details...
 #'
 #' @returns
 #' Returns a list containing two data frames: `sample` and `standard`
 #'
 #' @examples
+#' require (tamuccGCL)
+#'
 #' # Import data files
 #' raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
 #' plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
 #'
 #' quant_data <- load_quant_files(raw_data, plate_map)
+#'
+#' @export
 
 load_quant_files <- function (raw_data, plate_map) {
 

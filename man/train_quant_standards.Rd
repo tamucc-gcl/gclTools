@@ -11,7 +11,7 @@ train_quant_standards(
 )
 }
 \arguments{
-\item{quant_data}{list. Output of \code{load_quant_files}.}
+\item{quant_data}{list. Output of \code{\link[=load_quant_files]{load_quant_files()}}.}
 
 \item{model}{character string. Select the regression model to use, where \eqn{y} = DNA concentration (ng/well) and \eqn{x} = Zeroed_RFU = RFU - background RFU; background_RFU, obtained by subtracting the RFU of the zero standard against all the other standards, is done internally.
 
@@ -35,7 +35,7 @@ Returns a list containing the following:
 }
 }
 \description{
-Train a regression model to predict DNA concentration (ng/well) using relative fluorescence unit (RFU) measured from the standards in the quant assay. This takes the object generated via \code{load_quant_files} as input.
+Train a regression model to predict DNA concentration (ng/well) using relative fluorescence unit (RFU) measured from the standards in the quant assay. This takes the object generated via \code{\link[=load_quant_files]{load_quant_files()}} as input.
 
 This is Step 2 of 4 in a series of functions for analyzing fluorescent data.
 }
@@ -43,13 +43,24 @@ This is Step 2 of 4 in a series of functions for analyzing fluorescent data.
 Note that when running the power model, the standards with zeroed RFUs \eqn{<= 0} are removed to make the model work.
 }
 \examples{
+require (tamuccGCL)
+
 # Import data files
 raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
 plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
 
 quant_data <- load_quant_files(raw_data, plate_map)
-trained_model <- train_quant_standards (quant_data) # train using the zero-intercept model (default)
-trained_model <- train_quant_standards (quant_data, model = "power") # train using the power model
-trained_model <- train_quant_standards (quant_data, model = "linear", remove_standard = 10) # train using the linear model with intercept and remove the 10 ng/uL standard prior to regression.
 
+# Train using the zero-intercept model (default)
+trained_model <- train_quant_standards (quant_data)
+
+# Train using the power model
+trained_model <- train_quant_standards (quant_data, model = "power")
+
+# Train using the linear model with the 10 ng/uL standard removed
+trained_model <- train_quant_standards (quant_data, model = "linear", remove_standard = 10)
+
+}
+\seealso{
+\code{\link[=load_quant_files]{load_quant_files()}}
 }

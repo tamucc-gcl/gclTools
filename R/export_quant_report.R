@@ -1,28 +1,36 @@
 #' Analyze quant fluorescence data
 #'
 #' @description
-#' Wrangles and exports the quant data in a format used by the Genomics Core Laboratory (GCL).
+#' Wrangles and exports the quant data in a format used by the Genomics Core Laboratory (GCL). This takes the object generated via [quant_dna()] as input.
 #'
 #' This is step 4 of 4 in a series of functions for analyzing fluorescent data.
 #'
 #' @import tidyverse
 #' @import openxlsx
 #'
-#' @param quant_dna list. Output of `quant_dna`
+#' @param quant_dna list. Output of [quant_dna()]
 #'
 #' @returns
 #' Generates an excel file of the quant report.
 #'
+#' @seealso [load_quant_files()], [train_quant_standards()], [quant_dna()]
+#'
 #' @examples
-#' Import data files
+#' require (tamuccGCL)
+#'
+#' # Import data files
 #' raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
 #' plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
 #'
 #' quant_data <- load_quant_files(raw_data, plate_map)
 #' trained_model <- train_quant_standards (quant_data)
 #' quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
-#' export_quant_report (quant_report)
 #'
+#' \dontrun{
+#' export_quant_report (quant_report)
+#'}
+#'
+#' @export
 export_quant_report <- function (quant_dna) {
 
   # Step 1: Extract the quant output

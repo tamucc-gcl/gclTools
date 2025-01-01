@@ -7,24 +7,32 @@
 export_quant_report(quant_dna)
 }
 \arguments{
-\item{quant_dna}{list. Output of \code{quant_dna}}
+\item{quant_dna}{list. Output of \code{\link[=quant_dna]{quant_dna()}}}
 }
 \value{
 Generates an excel file of the quant report.
 }
 \description{
-Wrangles and exports the quant data in a format used by the Genomics Core Laboratory (GCL).
+Wrangles and exports the quant data in a format used by the Genomics Core Laboratory (GCL). This takes the object generated via \code{\link[=quant_dna]{quant_dna()}} as input.
 
 This is step 4 of 4 in a series of functions for analyzing fluorescent data.
 }
 \examples{
-Import data files
+require (tamuccGCL)
+
+# Import data files
 raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
 plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
 
 quant_data <- load_quant_files(raw_data, plate_map)
 trained_model <- train_quant_standards (quant_data)
 quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
-export_quant_report (quant_report)
 
+\dontrun{
+export_quant_report (quant_report)
+}
+
+}
+\seealso{
+\code{\link[=load_quant_files]{load_quant_files()}}, \code{\link[=train_quant_standards]{train_quant_standards()}}, \code{\link[=quant_dna]{quant_dna()}}
 }

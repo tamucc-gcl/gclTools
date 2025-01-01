@@ -27,13 +27,13 @@ Prepare the raw data files for fluorescence analysis. This function reads the ra
 
 This is Step 1 of 4 in a series of functions for analyzing fluorescent data.
 }
-\details{
-Additional details...
-}
 \examples{
+require (tamuccGCL)
+
 # Import data files
 raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
 plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
 
 quant_data <- load_quant_files(raw_data, plate_map)
+
 }

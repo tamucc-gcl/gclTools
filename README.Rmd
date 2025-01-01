@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# tamuccGCL
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Collection of R functions to address computational workflows in TAMU-CC Genomics Core Laboratory.
+
+## Installation
+
+You can install the development version of tamuccGCL from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("kllabrador/tamuccGCL")
+```
+
+## Example
+
+This is a basic example of analyzing the quant data using the package.
+
+```{r example}
+require (tamuccGCL)
+
+# Import data files
+raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
+plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
+
+quant_data <- load_quant_files(raw_data, plate_map)
+trained_model <- train_quant_standards (quant_data)
+quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
+export_quant_report (quant_report)
+
+```
