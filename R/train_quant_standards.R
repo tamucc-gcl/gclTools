@@ -1,4 +1,48 @@
-train_quant_standards <- function (quant_data, model = c("kit_reference", "linear", "power"), remove_standard = F) {
+#' Analyze quant fluorescence data
+#'
+#' @description
+#' Train a regression model to predict DNA concentration (ng/well) using relative fluorescence unit (RFU) measured from the standards in the quant assay. This takes the object generated via `load_quant_files` as input.
+#'
+#' This is Step 2 of 4 in a series of functions for analyzing fluorescent data.
+#'
+#' @import tidyverse
+#'
+#' @param quant_data
+#' list. Output of `load_quant_files`.
+#'
+#' @param model
+#' character string. Select the regression model to use, where \eqn{y} = DNA concentration (ng/well) and \eqn{x} = Zeroed_RFU = RFU - background RFU; background_RFU, obtained by subtracting the RFU of the zero standard against all the other standards, is done internally.
+#'
+#' Valid options are:
+#' - "kit_reference" (\eqn{y = 0 + bx}; a linear model with zero intercept as per the instructions in the user manual. This is the default option)
+#' - "linear" (\eqn{y = a + bx}; a linear model with non-zero intercept)
+#' - "power" (\eqn{y = exp(a)*x^b}; a power model with the formula definition \eqn{log(y) = log(x)}; used when there is a need to normalize the standard concentrations)
+#'
+#' @param remove_standard
+#' numeric vector. Select the standards that need to be removed to improve model fit. This is done when standards become outliers thus lowering the model's R2 value. Default is set to `FALSE` indicating that none of the standards will be removed.
+#'
+#' @returns
+#' Returns a list containing the following:
+#' - `background_rfu`: numeric. The RFU of the zero-standard.
+#' - `standard`: data frame. Contains the standard data used in the regression.
+#' - `model_fit`: the summary of the regression model, as though running `summary(model)`.
+#' - `r_squared`: numeric. The R squared value of the regression model.
+#' - `plot`: ggplot visualization of the regression showing the standards (point) and the model fit (regression line).
+#'
+#' @details
+#' Note that when running the power model, the standards with zeroed RFUs \eqn{<= 0} are removed to make the model work.
+#'
+#' @examples
+#' # Import data files
+#' raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
+#' plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
+#'
+#' quant_data <- load_quant_files(raw_data, plate_map)
+#' trained_model <- train_quant_standards (quant_data) # train using the zero-intercept model (default)
+#' trained_model <- train_quant_standards (quant_data, model = "power") # train using the power model
+#' trained_model <- train_quant_standards (quant_data, model = "linear", remove_standard = 10) # train using the linear model with intercept and remove the 10 ng/uL standard prior to regression.
+#'
+train_quant_standards <- function (quant_data, model = c("kit_reference", "linear", "power"), remove_standard = FALSE) {
 
   # Step 1: Extract the standard data frame and modify columns
   std <- quant_data$standard %>%
@@ -58,13 +102,37 @@ train_quant_standards <- function (quant_data, model = c("kit_reference", "linea
 
   fit <- switch(
     model,
+
+    # zero-intercept linear model
     kit_reference = lm (dna_per_well ~ 0 + zeroed_rfu, data = std),
+
+    # non-zero intercept linear model
     linear = lm (dna_per_well ~ zeroed_rfu, data = std),
-    power = lm (log(dna_per_well) ~ log(zeroed_rfu), data = filter (std, dna_per_well > 0))
+
+    # power model; requires that only zeroed_rfu > 0 are retained.
+    power = {
+
+      # Count rows with zeroed_rfu <=0
+      invalid_count <- sum (std$zeroed_rfu <= 0, na.rm = T)
+      if (invalid_count > 0) {
+        warning(invalid_count, " standards with zeroed_rfu <=0 were removed for the power model. See plot for more details.")
+      }
+
+      # Filter rows with zeroed_rfu > 0
+      valid_data <- filter (std, zeroed_rfu > 0)
+      if (nrow(valid_data) == 0) {
+        stop("No valid rows with zeroed_rfu > 0 for the power model.")
+      }
+      lm (log(dna_per_well) ~ log(zeroed_rfu), data = valid_data)
+    }
   )
 
   fitted_values <- if (model == "power") {
-    c(NA, exp(fit$fitted.values))
+    # For power model, expand fitted values back to the full dataset
+    fitted <- exp(fit$fitted.values)
+    fitted_full <- rep(NA, nrow(std))
+    fitted_full[std$zeroed_rfu > 0] <- fitted
+    fitted_full
   } else {
     fit$fitted.values
   }

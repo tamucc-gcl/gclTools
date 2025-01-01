@@ -1,24 +1,34 @@
+#' Analyze quant fluorescence data
+#'
+#' @description
+#' Wrangles and exports the quant data in a format used by the Genomics Core Laboratory (GCL).
+#'
+#' This is step 4 of 4 in a series of functions for analyzing fluorescent data.
+#'
+#' @import tidyverse
+#' @import openxlsx
+#'
+#' @param quant_dna list. Output of `quant_dna`
+#'
+#' @returns
+#' Generates an excel file of the quant report.
+#'
+#' @examples
+#' Import data files
+#' raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL")
+#' plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
+#'
+#' quant_data <- load_quant_files(raw_data, plate_map)
+#' trained_model <- train_quant_standards (quant_data)
+#' quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
+#' export_quant_report (quant_report)
+#'
 export_quant_report <- function (quant_dna) {
 
-  # Step 1: Load required libraries
-  required_packages <- c("openxlsx")
-
-  ## Helper funtion to ensure required packages are installed
-  check_and_load_packages <- function(packages) {
-    for (pkg in packages) {
-      if (!requireNamespace(pkg, quietly = TRUE)) {
-        install.packages(pkg)
-      }
-      library(pkg, character.only = TRUE)
-    }
-  }
-
-  check_and_load_packages(required_packages)
-
-  # Step 2: Extract the quant output
+  # Step 1: Extract the quant output
   quant_output <- quant_dna$quant_output
 
-  # Step 3: Wrangle the output_quant
+  # Step 2: Wrangle the output_quant
   quant_report <- quant_output %>%
 
     # Split sample_id into sample column (numeric) and sample_row (character)
@@ -77,7 +87,7 @@ export_quant_report <- function (quant_dna) {
       pass_redo)
 
 
-  # Step 4: Export in workbook
+  # Step 3: Export in workbook
   wb <- createWorkbook()
 
   addWorksheet(wb, "quant_data")
@@ -87,7 +97,7 @@ export_quant_report <- function (quant_dna) {
   writeData(wb, "quant_report", quant_report)
 
   # Save the workbook
-  saveWorkbook (wb, "~/quant_report.xlsx", overwrite = T)
+  saveWorkbook (wb, "quant_report.xlsx", overwrite = T)
 
   message("Quant report exported successfully!")
 

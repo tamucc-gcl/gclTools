@@ -2,7 +2,7 @@
 % Please edit documentation in R/load_quant_files.R
 \name{load_quant_files}
 \alias{load_quant_files}
-\title{Analyze flourescent data}
+\title{Analyze quant fluorescence data}
 \usage{
 load_quant_files(raw_data, plate_map)
 }
@@ -11,21 +11,21 @@ load_quant_files(raw_data, plate_map)
 
 \item{plate_map}{This contains the information on how the samples were laid out in the 364-well plate and its associated metadata. This file follows a specific data structure. The following columns are expected:
 \itemize{
-\item plate_id: Name of the sample plate/strip that has been assayed. All standards used in the assay should be named "standard".
-\item sample_id: Name of the samples in the plate. This usually corresponds to well position. Standards used in this assay should be named based on the concentration (ng/ul) used.
-\item replicate: A numeric value containing the replicate used in the assay. A value of 2 is expected for "double-quants"
-\item quant_row: A letter indicating the row of the sample in the quant plate.
-\item quant_column: A number indicating the column of the sample in the quant plate.
-\item sample_volume: A number indicating the volume (uL) of samples and standards used in the assay.
+\item plate_id: character string. Name of the sample plate/strip assayed. All standards used in the assay should be named "standard".
+\item sample_id: character string. Name of the samples in the plate. This usually corresponds to well position. Standards used in this assay should be named based on the concentration (ng/ul) used.
+\item replicate: numeric. The replicate used in the assay. A value of 2 is expected for "double-quants"
+\item quant_row: character. Typically a letter indicating the row of the sample in the quant plate.
+\item quant_column: numeric. Typically a number indicating the column of the sample in the quant plate.
+\item sample_volume: numeric. Indicates the volume (uL) of samples and standards used in the assay.
 }}
 }
 \value{
-Returns a list containing two data frames: sample and standard
+Returns a list containing two data frames: \code{sample} and \code{standard}
 }
 \description{
 Prepare the raw data files for fluorescence analysis. This function reads the raw data and plate map, validates the file format and data structure, merges the files, and then prepares a list that separates the samples from the standards.
 
-This is the first step in a series of functions for analyzing fluorescent data.
+This is Step 1 of 4 in a series of functions for analyzing fluorescent data.
 }
 \details{
 Additional details...
