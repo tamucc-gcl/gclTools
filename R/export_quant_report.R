@@ -112,7 +112,7 @@ export_quant_report <- function (quant_dna) {
              startRow = 1,
              startCol = 10,
              width = 6,
-             height = 4,
+             height = 5,
              units = "in",
              dpi = 300,
              fileType = "png")
