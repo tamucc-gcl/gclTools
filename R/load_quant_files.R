@@ -9,10 +9,10 @@
 #' @import janitor
 #'
 #' @param raw_data
-#' Raw plate reader data saved as a comma-separated value (csv) file. This is the file exported from the SpectraMax software. It contains the well and fluorescence information. This file should not be manipulated once it has been exported.
+#' path to the raw plate reader data saved as a comma-separated value (csv) file. This is the file exported from the SpectraMax software. It contains the well and fluorescence information. This file should not be manipulated once it has been exported.
 #'
 #' @param plate_map
-#' This contains the information on how the samples were laid out in the 364-well plate and its associated metadata. This file follows a specific data structure. The following columns are expected:
+#' path to the assay plate map. This contains the information on how the samples were laid out in the 364-well plate and its associated metadata. This file follows a specific data structure. The following columns are expected:
 #'
 #' - plate_id: character string. Name of the sample plate/strip assayed. All standards used in the assay should be named "standard".
 #'

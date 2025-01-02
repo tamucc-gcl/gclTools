@@ -38,6 +38,7 @@
 quant_dna <- function (quant_data, trained_model) {
 
   # Step 1: Extract the necessary components from trained_data
+  standard <- trained_model$standard
   background_rfu <- trained_model$background_rfu
   model_fit <- trained_model$model_fit
   plot <- trained_model$plot
@@ -75,7 +76,8 @@ quant_dna <- function (quant_data, trained_model) {
   # Extract function output
   return (list(
     quant_output = sample_data,
-    plot = gg)
+    plot = gg,
+    standard = standard)
   )
 }
 

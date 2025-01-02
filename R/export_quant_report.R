@@ -35,6 +35,8 @@ export_quant_report <- function (quant_dna) {
 
   # Step 1: Extract the quant output
   quant_output <- quant_dna$quant_output
+  quant_standard <- quant_dna$standard
+  quant_plot <- quant_dna$plot
 
   # Step 2: Wrangle the output_quant
   quant_report <- quant_output %>%
@@ -100,6 +102,20 @@ export_quant_report <- function (quant_dna) {
 
   addWorksheet(wb, "quant_data")
   writeData(wb, "quant_data", quant_output)
+
+  addWorksheet(wb, "quant_standard")
+  writeData(wb, "quant_standard", quant_standard)
+
+  print (quant_plot)
+  insertPlot(wb,
+             sheet = "quant_standard",
+             startRow = 1,
+             startCol = 10,
+             width = 6,
+             height = 4,
+             units = "in",
+             dpi = 300,
+             fileType = "png")
 
   addWorksheet(wb, "quant_report")
   writeData(wb, "quant_report", quant_report)
