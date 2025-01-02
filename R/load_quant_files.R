@@ -67,12 +67,12 @@ load_quant_files <- function (raw_data, plate_map) {
     stop("The `plate_map` file must be a CSV file.")
   }
 
-  raw_data_df <- read.csv (raw_data) %>% clean_names()
+  raw_data_df <- read.csv (raw_data) %>% clean_names() %>% select (wells, value)
 
   plate_map_df <- read.csv (plate_map) %>% clean_names()
 
   # Step 3: Data validation
-  required_raw_cols <- c("sample", "wells", "value", "r")
+  required_raw_cols <- c("wells", "value")
   required_plate_cols <- c("plate_id", "sample_id", "replicate", "quant_row", "quant_column", "sample_volume")
 
   ## Validate and modify the raw data file
