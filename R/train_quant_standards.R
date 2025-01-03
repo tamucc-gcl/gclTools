@@ -196,7 +196,7 @@ train_quant_standards <- function (quant_data, model = c("kit_reference", "linea
     labs (title = paste("Fitted", model, "model"),
           subtitle = paste0(subtitle, "\nblue points = standards; grey polygons = samples"),
           x = "Zeroed RFU",
-          y = "DNA concentration (ng) per well") +
+          y = "DNA concentration (ng/well)") +
     theme_bw()
   print (gg)
 

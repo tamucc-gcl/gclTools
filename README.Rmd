@@ -4,66 +4,131 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  fig.width = 6,
+  fig.height = 4
 )
+
+
+
 ```
 
 # tamuccGCL
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 Collection of R functions to automate computational workflows in TAMU-CC Genomics Core Laboratory.
 
 This package handles the following:
 
-- Quant (AccuBlue, AccuClear) workflows 
+-   Quant (AccuBlue, AccuClear) workflows
 
 ## Installation
 
 You can install the development version of tamuccGCL from [GitHub](https://github.com/) with:
-```{r}
+
+``` r
 # install.packages("devtools")
 devtools::install_github("kllabrador/tamuccGCL")
 ```
 
+If, for some reason the package cannot be installed, please notify Kevin Labrador ([klabrador\@islander.tamucc.edu](mailto:klabrador@islander.tamucc.edu){.email}).
 
-If, for some reason the package cannot be installed, please notify Kevin Labrador (klabrador@islander.tamucc.edu).
+Once installation is successful, load the library.
 
+```{r}
+require (tamuccGCL)
+```
 
 ## Example - Quant Workflow
 
-In a nutshell, the quant workflow takes the file path to the quant data files (in csv format) as input, trains the regression model based on the relative fluorescence unit (RFU) of the standards, and then uses the regression model to predict the DNA concentration of the samples. The output file which contains the quant report following the Genomics Core Lab's format is then generated. 
+In a nutshell, the quant workflow takes the file path to the quant data files (in csv format) as input, trains the regression model based on the relative fluorescence unit (RFU) of the standards, and then uses the regression model to predict the DNA concentration of the samples. The output file, which contains the quant report following the Genomics Core Lab's format, is then generated.
 
 ```{r fig.height=5, fig.width=7, echo=F}
-knitr::include_graphics("man/figures/workflow.jpg")
+knitr::include_graphics("man/figures/quant_workflow.png")
 ```
 
+### Step 1 - `load_quant_files()`
 
-The Quant workflow requires two data frames in comma-separated values (csv) format: (1) the plate reader data, and (2) the plate map. The **plate reader data** is the raw data exported from the SpectraMax software, and should contain the columns, `wells` and `values`. On the other hand, the **plate map** is a user-defined file that contains the well information and metadata associated with the samples in the assay. The data structure is specific and should only have the following columns: `plate_id`, `sample_id`, `replicate`, `quant_row`, `quant_column`, and `sample_volume`. 
+The Quant workflow requires two data frames in comma-separated values (csv) format: (1) the plate reader data, and (2) the plate map. The **plate reader data** is the raw data exported from the SpectraMax software, and should contain the columns, `wells` and `values`. On the other hand, the **plate map** is a user-defined file that contains the well information and metadata associated with the samples in the assay. The data structure is specific and should only have the following columns: `plate_id`, `sample_id`, `replicate`, `quant_row`, `quant_column`, and `sample_volume`.
 
-
-```{r example}
-require (tamuccGCL)
-
+```{r}
 # Import data files
 raw_data <- system.file("extdata", "raw_data.csv", package = "tamuccGCL") 
 plate_map <- system.file("extdata", "plate_map.csv", package = "tamuccGCL")
-
-# The files used in the example are included in the package. Substitute the arguments with the file path to your csv files. 
 ```
 
+> Do note that the files used in the example are included in the package. Substitute the arguments with the file path to your csv files.
 
+Once the file paths are provided, they are read, validated, and merged using the `load_quant_files()` function. The output of `load_quant_files()` is a list with two data frames: (1) `sample`, and (2) `standard`. The latter is used to train the regression model using the function `train_quant_standards()`.
 
 ```{r}
 quant_data <- load_quant_files(raw_data, plate_map)
+print(quant_data)
+```
+
+### Step 2 - `train_quant_standards()`
+
+This function takes the standard data frame from `load_quant_files()`, subtracts the background RFU (i.e., the RFU of the 0 ng/uL standard) from the rest of the standards, and then use the resulting `zeroed_rfu` for the regression model.
+
+There are three models to choose from:
+
+-   **kit_reference** - $[DNA] = 0 + b(RFU)$ (this zero-intercept model is the one used in the product manual, and is thus the default when no arguments are provided.
+-   **linear** - $[DNA] = a + b(RFU)$ (a linear model with non-zero intercept)
+-   **power** - $[DNA] = exp(a) * RFU^b$ (this model is used when there is a need to normalize the standard concentrations. The regression model is defined as `log(DNA) ~ log(RFU)`.
+
+The output is a list that contains the objects needed in succeeding steps. A scatterplot with the regression line allows assessment of the model.
+
+```{r}
 trained_model <- train_quant_standards (quant_data)
+print (trained_model)
+```
+
+In instances when standards need to be removed to improve model fit $(R^2)$, the argument `remove_standard` can be used. It accepts a numeric vector.
+
+```{r}
+# Remove one standard
+model_with_standards_removed <-  train_quant_standards (quant_data,
+                                                        model = "power", 
+                                                        remove_standard = 2)
+
+# Remove three standards
+model_with_standards_removed <- train_quant_standards(quant_data,
+                                                      remove_standard = c(2, 6, 8)
+                                                      )
+```
+
+### Step 3 - `quant_dna()`
+
+The model generated from Step 2 will be used to predict the DNA concentrations (ng/well and ng/uL) from the sample data frame. This is a pretty straightforward step - you only need to provide the objects generated from both Steps 1 and 2.
+
+Similar to how the training dataset was prepared, the background RFU will be subtracted from the sample RFU, and the `zeroed_rfu` will be used for predicting the DNA concentration. In addition, the plot from Step 2 will be updated to show the location of the samples along the regression line.
+
+```{r}
 quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
-export_quant_report (quant_report)
+print(quant_report)
 
 ```
+
+### Step 4 - `export_quant_report()`
+
+This step takes the output from Step 3, wrangles the quant results into the format used by the GCL, and saves the output as an excel file.
+
+```{r}
+export_quant_report(quant_report)
+```
+
+The excel file is saved in the current working directory. This file has three tabs:
+
+-   `quant_data` - the quant results of the samples in tall format
+
+-   `quant_standard` - the quant results of the standard, along with the regression plot for inspection
+
+-   `quant_report` - the quant results of the samples in wide format (i.e., GCL format)
