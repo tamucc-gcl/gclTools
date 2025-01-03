@@ -185,8 +185,6 @@ trained_model <- train_quant_standards (quant_data)
 #> R-squared: 0.9916
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
-
 ``` r
 print (trained_model)
 #> $background_rfu
@@ -219,7 +217,7 @@ print (trained_model)
 #> $plot
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 In instances when standards need to be removed to improve model fit
 $(R^2)$, the argument `remove_standard` can be used. It accepts a
@@ -242,7 +240,7 @@ model_with_standards_removed <-  train_quant_standards (quant_data,
 #> (`geom_line()`).
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 ``` r
 
@@ -257,7 +255,7 @@ model_with_standards_removed <- train_quant_standards(quant_data,
 #> R-squared: 0.9986
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" />
 
 ### Step 3 - `quant_dna()`
 
@@ -274,6 +272,9 @@ regression line.
 
 ``` r
 quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
+```
+
+``` r
 print(quant_report)
 #> $quant_output
 #>                      plate_id sample_id replicate quant_row quant_column
@@ -314,7 +315,7 @@ print(quant_report)
 #> $plot
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
 
     #> 
     #> $standard
@@ -335,28 +336,25 @@ the format used by the GCL, and saves the output as an excel file.
 
 ``` r
 export_quant_report(quant_report)
+#> Warning in file.create(to[okay]): cannot create file 'quant_report.xlsx',
+#> reason 'Permission denied'
+#> Quant report exported successfully!
+#> # A tibble: 8 × 18
+#>   plate_id       sample_row sample_column quant_row_1 quant_column_1 quant_row_2
+#>   <chr>          <chr>              <dbl> <chr>                <int> <chr>      
+#> 1 Tepolt-ddRAD-… A                     12 O                        1 O          
+#> 2 Tepolt-ddRAD-… B                     12 O                        3 O          
+#> 3 Tepolt-ddRAD-… C                     12 O                        5 O          
+#> 4 Tepolt-ddRAD-… D                     12 O                        7 O          
+#> 5 Tepolt-ddRAD-… E                     12 O                        9 O          
+#> 6 Tepolt-ddRAD-… F                     12 O                       11 O          
+#> 7 Tepolt-ddRAD-… G                     12 O                       13 O          
+#> 8 Tepolt-ddRAD-… H                     12 O                       15 O          
+#> # ℹ 12 more variables: quant_column_2 <int>, raw_rfu_1 <dbl>,
+#> #   zeroed_rfu_1 <dbl>, ng_well_1 <dbl>, ng_ul_1 <dbl>, raw_rfu_2 <dbl>,
+#> #   zeroed_rfu_2 <dbl>, ng_well_2 <dbl>, ng_ul_2 <dbl>, difference <dbl>,
+#> #   average <dbl>, pass_redo <chr>
 ```
-
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
-
-    #> Warning in file.create(to[okay]): cannot create file 'quant_report.xlsx',
-    #> reason 'Permission denied'
-    #> Quant report exported successfully!
-    #> # A tibble: 8 × 18
-    #>   plate_id       sample_row sample_column quant_row_1 quant_column_1 quant_row_2
-    #>   <chr>          <chr>              <dbl> <chr>                <int> <chr>      
-    #> 1 Tepolt-ddRAD-… A                     12 O                        1 O          
-    #> 2 Tepolt-ddRAD-… B                     12 O                        3 O          
-    #> 3 Tepolt-ddRAD-… C                     12 O                        5 O          
-    #> 4 Tepolt-ddRAD-… D                     12 O                        7 O          
-    #> 5 Tepolt-ddRAD-… E                     12 O                        9 O          
-    #> 6 Tepolt-ddRAD-… F                     12 O                       11 O          
-    #> 7 Tepolt-ddRAD-… G                     12 O                       13 O          
-    #> 8 Tepolt-ddRAD-… H                     12 O                       15 O          
-    #> # ℹ 12 more variables: quant_column_2 <int>, raw_rfu_1 <dbl>,
-    #> #   zeroed_rfu_1 <dbl>, ng_well_1 <dbl>, ng_ul_1 <dbl>, raw_rfu_2 <dbl>,
-    #> #   zeroed_rfu_2 <dbl>, ng_well_2 <dbl>, ng_ul_2 <dbl>, difference <dbl>,
-    #> #   average <dbl>, pass_redo <chr>
 
 The excel file is saved in the current working directory. This file has
 three tabs:

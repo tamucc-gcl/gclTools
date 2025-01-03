@@ -10,11 +10,9 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-",
   out.width = "100%",
-  fig.width = 6,
-  fig.height = 4
+  fig.width = 5,
+  fig.height = 3.5
 )
-
-
 
 ```
 
@@ -86,8 +84,11 @@ There are three models to choose from:
 
 The output is a list that contains the objects needed in succeeding steps. A scatterplot with the regression line allows assessment of the model.
 
-```{r}
+```{r, fig.show="hide"}
 trained_model <- train_quant_standards (quant_data)
+```
+
+```{r}
 print (trained_model)
 ```
 
@@ -111,17 +112,21 @@ The model generated from Step 2 will be used to predict the DNA concentrations (
 
 Similar to how the training dataset was prepared, the background RFU will be subtracted from the sample RFU, and the `zeroed_rfu` will be used for predicting the DNA concentration. In addition, the plot from Step 2 will be updated to show the location of the samples along the regression line.
 
-```{r}
+```{r, fig.show = "hide"}
 quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model)
-print(quant_report)
 
+
+```
+
+```{r}
+print(quant_report)
 ```
 
 ### Step 4 - `export_quant_report()`
 
 This step takes the output from Step 3, wrangles the quant results into the format used by the GCL, and saves the output as an excel file.
 
-```{r}
+```{r, fig.show = "hide"}
 export_quant_report(quant_report)
 ```
 
