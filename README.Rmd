@@ -34,7 +34,7 @@ You can install the development version of tamuccGCL from [GitHub](https://githu
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("kllabrador/tamuccGCL")
+devtools::install_github("tamucc-gcl/tamuccGCL")
 ```
 
 If, for some reason the package cannot be installed, please notify Kevin Labrador ([klabrador\@islander.tamucc.edu](mailto:klabrador@islander.tamucc.edu){.email}).

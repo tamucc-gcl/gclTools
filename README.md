@@ -20,7 +20,7 @@ You can install the development version of tamuccGCL from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("kllabrador/tamuccGCL")
+devtools::install_github("tamucc-gcl/tamuccGCL")
 ```
 
 If, for some reason the package cannot be installed, please notify Kevin
@@ -336,8 +336,6 @@ the format used by the GCL, and saves the output as an excel file.
 
 ``` r
 export_quant_report(quant_report)
-#> Warning in file.create(to[okay]): cannot create file 'quant_report.xlsx',
-#> reason 'Permission denied'
 #> Quant report exported successfully!
 #> # A tibble: 8 × 18
 #>   plate_id       sample_row sample_column quant_row_1 quant_column_1 quant_row_2
