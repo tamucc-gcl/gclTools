@@ -12,7 +12,7 @@ Authors@R: c(
     person(
     given = "Christopher",
     family = "Bird",
-    email = chris.bird@tamucc.edu",
+    email = "chris.bird@tamucc.edu",
     role = c("ctb", "rev")
     ))
 Description: Collection of R functions to address computational workflows in TAMU-CC Genomics Core Laboratory.
