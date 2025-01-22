@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ```
 
-# tamuccGCL
+# gclTools
 
 <!-- badges: start -->
 
@@ -30,20 +30,22 @@ This package handles the following:
 
 ## Installation
 
-You can install the development version of tamuccGCL from [GitHub](https://github.com/) with:
+You can install the development version of gclTools from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("tamucc-gcl/tamuccGCL")
+devtools::install_github("tamucc-gcl/gclTools")
 ```
-
-If, for some reason the package cannot be installed, please notify Kevin Labrador ([klabrador\@islander.tamucc.edu](mailto:klabrador@islander.tamucc.edu){.email}).
 
 Once installation is successful, load the library.
 
 ```{r}
-require (tamuccGCL)
+require(tamuccGCL)
 ```
+
+If you encounter any issues with this package, please [open an issue on GitHub](https://github.com/tamucc-gcl/gclTools/issues).
+
+------------------------------------------------------------------------
 
 ## Example - Quant Workflow
 
@@ -52,6 +54,9 @@ In a nutshell, the quant workflow takes the file path to the quant data files (i
 ```{r fig.height=5, fig.width=7, echo=F}
 knitr::include_graphics("man/figures/quant_workflow.png")
 ```
+
+------------------------------------------------------------------------
+
 
 ### Step 1 - `load_quant_files()`
 
@@ -72,6 +77,8 @@ quant_data <- load_quant_files(raw_data, plate_map)
 print(quant_data)
 ```
 
+---
+
 ### Step 2 - `train_quant_standards()`
 
 This function takes the standard data frame from `load_quant_files()`, subtracts the background RFU (i.e., the RFU of the 0 ng/uL standard) from the rest of the standards, and then use the resulting `zeroed_rfu` for the regression model.
@@ -85,26 +92,28 @@ There are three models to choose from:
 The output is a list that contains the objects needed in succeeding steps. A scatterplot with the regression line allows assessment of the model.
 
 ```{r, fig.show="hide"}
-trained_model <- train_quant_standards (quant_data)
+trained_model <- train_quant_standards(quant_data)
 ```
 
 ```{r}
-print (trained_model)
+print(trained_model)
 ```
 
 In instances when standards need to be removed to improve model fit $(R^2)$, the argument `remove_standard` can be used. It accepts a numeric vector.
 
 ```{r}
 # Remove one standard
-model_with_standards_removed <-  train_quant_standards (quant_data,
-                                                        model = "power", 
-                                                        remove_standard = 2)
+model_with_standards_removed <-  train_quant_standards(quant_data,
+                                                       model = "power", 
+                                                       remove_standard = 2)
 
 # Remove three standards
 model_with_standards_removed <- train_quant_standards(quant_data,
                                                       remove_standard = c(2, 6, 8)
                                                       )
 ```
+
+---
 
 ### Step 3 - `quant_dna()`
 
@@ -122,6 +131,8 @@ quant_report <- quant_dna(quant_data = quant_data, trained_model = trained_model
 print(quant_report)
 ```
 
+---
+
 ### Step 4 - `export_quant_report()`
 
 This step takes the output from Step 3, wrangles the quant results into the format used by the GCL, and saves the output as an excel file.
@@ -137,3 +148,25 @@ The excel file is saved in the current working directory. This file has three ta
 -   `quant_standard` - the quant results of the standard, along with the regression plot for inspection
 
 -   `quant_report` - the quant results of the samples in wide format (i.e., GCL format)
+
+---
+
+# Changelog
+
+Here are the list of changes done to this package:
+
+### `r {Sys.Date()}`
+
+**Housekeeping**
+
+- Changed package name from `tamuccGCL` to `gclTools`. Changes were also done on associated files
+- Added lines for each section in the readme
+- Removed the whitespace in presenting the function (i.e., from `function (argument)` to `function(argument)`)
+- Redirected issues to the package's Issue page on `Github` instead of emailing K.Labrador
+- Added `package.Rd` to allow a brief documentation when calling the package
+
+**Functionality**
+
+
+
+

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# tamuccGCL
+# gclTools
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -15,21 +15,18 @@ This package handles the following:
 
 ## Installation
 
-You can install the development version of tamuccGCL from
+You can install the development version of gclTools from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("tamucc-gcl/tamuccGCL")
+devtools::install_github("tamucc-gcl/gclTools")
 ```
-
-If, for some reason the package cannot be installed, please notify Kevin
-Labrador (<klabrador@islander.tamucc.edu>).
 
 Once installation is successful, load the library.
 
 ``` r
-require (tamuccGCL)
+require(tamuccGCL)
 #> Loading required package: tamuccGCL
 #> Loading required package: openxlsx
 #> Loading required package: tidyverse
@@ -54,6 +51,11 @@ require (tamuccGCL)
 #>     chisq.test, fisher.test
 ```
 
+If you encounter any issues with this package, please [open an issue on
+GitHub](https://github.com/tamucc-gcl/gclTools/issues).
+
+------------------------------------------------------------------------
+
 ## Example - Quant Workflow
 
 In a nutshell, the quant workflow takes the file path to the quant data
@@ -64,6 +66,8 @@ output file, which contains the quant report following the Genomics Core
 Lab’s format, is then generated.
 
 <img src="man/figures/quant_workflow.png" width="100%" />
+
+------------------------------------------------------------------------
 
 ### Step 1 - `load_quant_files()`
 
@@ -155,6 +159,8 @@ print(quant_data)
 #> 24 759.432
 ```
 
+------------------------------------------------------------------------
+
 ### Step 2 - `train_quant_standards()`
 
 This function takes the standard data frame from `load_quant_files()`,
@@ -178,7 +184,7 @@ steps. A scatterplot with the regression line allows assessment of the
 model.
 
 ``` r
-trained_model <- train_quant_standards (quant_data)
+trained_model <- train_quant_standards(quant_data)
 #> No replicate standards detected. Original RFU values are kept.
 #> Fitted a kit_reference model.
 #> Coefficients: zeroed_rfu = 0.0687
@@ -186,7 +192,7 @@ trained_model <- train_quant_standards (quant_data)
 ```
 
 ``` r
-print (trained_model)
+print(trained_model)
 #> $background_rfu
 #> [1] 4.814
 #> 
@@ -225,9 +231,9 @@ numeric vector.
 
 ``` r
 # Remove one standard
-model_with_standards_removed <-  train_quant_standards (quant_data,
-                                                        model = "power", 
-                                                        remove_standard = 2)
+model_with_standards_removed <-  train_quant_standards(quant_data,
+                                                       model = "power", 
+                                                       remove_standard = 2)
 #> No replicate standards detected. Original RFU values are kept.
 #> Removing the following standards: 2
 #> Warning in train_quant_standards(quant_data, model = "power", remove_standard =
@@ -256,6 +262,8 @@ model_with_standards_removed <- train_quant_standards(quant_data,
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" />
+
+------------------------------------------------------------------------
 
 ### Step 3 - `quant_dna()`
 
@@ -329,6 +337,8 @@ print(quant_report)
     #> 23 standard       8.0 507.526        8.0         40.0    502.712 3.451199e+01
     #> 24 standard      10.0 759.432       10.0         50.0    754.618 5.180575e+01
 
+------------------------------------------------------------------------
+
 ### Step 4 - `export_quant_report()`
 
 This step takes the output from Step 3, wrangles the quant results into
@@ -364,3 +374,25 @@ three tabs:
 
 - `quant_report` - the quant results of the samples in wide format
   (i.e., GCL format)
+
+------------------------------------------------------------------------
+
+# Changelog
+
+Here are the list of changes done to this package:
+
+### 2025-01-21
+
+**Housekeeping**
+
+- Changed package name from `tamuccGCL` to `gclTools`. Changes were also
+  done on associated files
+- Added lines for each section in the readme
+- Removed the whitespace in presenting the function (i.e., from
+  `function (argument)` to `function(argument)`)
+- Redirected issues to the package’s Issue page on `Github` instead of
+  emailing K.Labrador
+- Added `package.Rd` to allow a brief documentation when calling the
+  package
+
+**Functionality**

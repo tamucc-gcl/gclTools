@@ -1,10 +1,24 @@
-Package: tamuccGCL
+Package: gclTools
+Type: Package
 Title: TAMUCC-GCL Function Collection
 Version: 0.0.0.9000
-Authors@R: 
-    person("Kevin", "Labrador", , "klabrador@islander.tamucc.edu", role = c("aut", "cre"))
+Authors@R: c(
+    person(
+    given = "Kevin", 
+    family = "Labrador", 
+    email = "klabrador@islander.tamucc.edu", 
+    role = c("aut", "cre")
+    ),
+    person(
+    given = "Christopher",
+    family = "Bird",
+    email = chris.bird@tamucc.edu",
+    role = c("ctb", "rev")
+    ))
 Description: Collection of R functions to address computational workflows in TAMU-CC Genomics Core Laboratory.
-License: MIT + file LICENSE
+URL: https://github.com/tamucc-gcl/gclTools
+BugReports: https://github.com/tamucc-gcl/gclTools/issues
+License: GPL (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2

@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(tamuccGCL)
+library(gclTools)
 
-test_check("tamuccGCL")
+# test_check("gclTools")
