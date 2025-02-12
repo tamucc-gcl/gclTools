@@ -1,0 +1,185 @@
+plate_id,replicate,plate_row,plate_column,quant_row,quant_column,sample_volume,model,rfu,dna_per_well,ng_per_ul,quant_status,dna_extract_tube_id,sample_type
+rbd-edna-plate04,1,A,1,A,1,1,polynomial,573.383,6.706987672510162,6.706987672510162,within_lod,rbde_202,sample
+rbd-edna-plate04,1,A,2,B,1,1,polynomial,2365.566,28.14045429912431,28.14045429912431,within_lod,rbde_210,sample
+rbd-edna-plate04,1,B,1,C,1,1,polynomial,35.52,0.17016535979776307,0.17016535979776307,below_lod,rbde_203,filter control
+rbd-edna-plate04,1,B,2,D,1,1,polynomial,39.388,0.19907589565123435,0.19907589565123435,within_lod,rbde_211,extraction control
+rbd-edna-plate04,1,C,1,E,1,1,polynomial,14033.92,112.1400457482412,112.1400457482412,above_lod,rbde_204,sample
+rbd-edna-plate04,1,C,2,F,1,1,polynomial,381.419,4.203393833838627,4.203393833838627,within_lod,rbde_212,sample
+rbd-edna-plate04,1,D,1,G,1,1,polynomial,1022.072,12.475379488301535,12.475379488301535,within_lod,rbde_205,sample
+rbd-edna-plate04,1,D,2,H,1,1,polynomial,799.543,9.642055844358925,9.642055844358925,within_lod,rbde_213,sample
+rbd-edna-plate04,1,E,1,I,1,1,polynomial,82.244,0.5816286223320949,0.5816286223320949,within_lod,rbde_206,sample
+rbd-edna-plate04,1,E,2,J,1,1,polynomial,711.728,8.507676883935384,8.507676883935384,within_lod,rbde_214,sample
+rbd-edna-plate04,1,F,1,K,1,1,polynomial,563.683,6.580324237516497,6.580324237516497,within_lod,rbde_207,sample
+rbd-edna-plate04,1,F,2,L,1,1,polynomial,766.065,9.2105515487353955,9.2105515487353955,within_lod,rbde_215,sample
+rbd-edna-plate04,1,G,1,M,1,1,polynomial,54.002,0.31830073020390715,0.31830073020390715,within_lod,rbde_208,field control
+rbd-edna-plate04,1,G,2,N,1,1,polynomial,1216.411,14.894826800258361,14.894826800258361,within_lod,rbde_216,sample
+rbd-edna-plate04,1,H,1,O,1,1,polynomial,1812.802,21.987017045122837,21.987017045122837,within_lod,rbde_209,sample
+rbd-edna-plate04,1,H,2,P,1,1,polynomial,632.279,7.475154563310973,7.475154563310973,within_lod,rbde_217,sample
+rbd-edna-plate04,1,A,3,A,2,1,polynomial,331.041,3.5530169302899535,3.5530169302899535,within_lod,rbde_218,sample
+rbd-edna-plate04,1,A,4,B,2,1,polynomial,115.137,0.9244543846226467,0.9244543846226467,within_lod,rbde_226,sample
+rbd-edna-plate04,1,B,3,C,2,1,polynomial,352.916,3.8347088095103268,3.8347088095103268,within_lod,rbde_219,sample
+rbd-edna-plate04,1,B,4,D,2,1,polynomial,209.03,2.017518208924547,2.017518208924547,within_lod,rbde_227,sample
+rbd-edna-plate04,1,C,3,E,2,1,polynomial,422.132,4.732370521826084,4.732370521826084,within_lod,rbde_220,sample
+rbd-edna-plate04,1,C,4,F,2,1,polynomial,30.109,0.13197452293526465,0.13197452293526465,below_lod,rbde_228,extraction control
+rbd-edna-plate04,1,D,3,G,2,1,polynomial,332.324,3.5695032287066897,3.5695032287066897,within_lod,rbde_221,sample
+rbd-edna-plate04,1,D,4,H,2,1,polynomial,447.951,5.068816437878124,5.068816437878124,within_lod,rbde_229,sample
+rbd-edna-plate04,1,E,3,I,2,1,polynomial,86.888,0.6280534470161208,0.6280534470161208,within_lod,rbde_222,field control
+rbd-edna-plate04,1,E,4,J,2,1,polynomial,580.214,6.796167617023879,6.796167617023879,within_lod,rbde_230,sample
+rbd-edna-plate04,1,F,3,K,2,1,polynomial,277.32,2.867739592151413,2.867739592151413,within_lod,rbde_223,sample
+rbd-edna-plate04,1,F,4,L,2,1,polynomial,431.611,4.85582091346141,4.85582091346141,within_lod,rbde_231,sample
+rbd-edna-plate04,1,G,3,M,2,1,polynomial,492.681,5.652723345313917,5.652723345313917,within_lod,rbde_224,sample
+rbd-edna-plate04,1,G,4,N,2,1,polynomial,16.053,0.048358888994117735,0.048358888994117735,below_lod,rbde_232,filter control
+rbd-edna-plate04,1,H,3,O,2,1,polynomial,488.223,5.594491821042876,5.594491821042876,within_lod,rbde_225,sample
+rbd-edna-plate04,1,H,4,P,2,1,polynomial,782.189,9.418531490083437,9.418531490083437,within_lod,rbde_233,sample
+rbd-edna-plate04,1,A,5,A,3,1,polynomial,222.021,2.176804131416486,2.176804131416486,within_lod,rbde_234,sample
+rbd-edna-plate04,1,A,6,B,3,1,polynomial,68.717,0.4510198200704574,0.4510198200704574,within_lod,rbde_242,extraction control
+rbd-edna-plate04,1,B,5,C,3,1,polynomial,111.287,0.8828171568740009,0.8828171568740009,within_lod,rbde_235,field control
+rbd-edna-plate04,1,B,6,D,3,1,polynomial,1315.487,16.10764276341098,16.10764276341098,within_lod,rbde_243,sample
+rbd-edna-plate04,1,C,5,E,3,1,polynomial,1448.358,17.712203625372464,17.712203625372464,within_lod,rbde_236,sample
+rbd-edna-plate04,1,C,6,F,3,1,polynomial,460.172,5.228249123147153,5.228249123147153,within_lod,rbde_244,sample
+rbd-edna-plate04,1,D,5,G,3,1,polynomial,524.336,6.066302764021283,6.066302764021283,within_lod,rbde_237,sample
+rbd-edna-plate04,1,D,6,H,3,1,polynomial,844.025,10.213410398954117,10.213410398954117,within_lod,rbde_245,sample
+rbd-edna-plate04,1,E,5,I,3,1,polynomial,76.231,0.5226746800658278,0.5226746800658278,within_lod,rbde_238,field control
+rbd-edna-plate04,1,E,6,J,3,1,polynomial,125.284,1.0357853839375573,1.0357853839375573,within_lod,rbde_246,sample
+rbd-edna-plate04,1,F,5,K,3,1,polynomial,39.869,0.20275717054550968,0.20275717054550968,within_lod,rbde_239,field control
+rbd-edna-plate04,1,F,6,L,3,1,polynomial,422.145,4.732539765459259,4.732539765459259,within_lod,rbde_247,sample
+rbd-edna-plate04,1,G,5,M,3,1,polynomial,621.122,7.329781815215204,7.329781815215204,within_lod,rbde_240,sample
+rbd-edna-plate04,1,G,6,N,3,1,polynomial,364.344,3.9823305140346914,3.9823305140346914,within_lod,rbde_248,sample
+rbd-edna-plate04,1,H,5,O,3,1,polynomial,18.676,0.061902476103598746,0.061902476103598746,below_lod,rbde_241,filter control
+rbd-edna-plate04,1,H,6,P,3,1,polynomial,27.387,0.11387212012112947,0.11387212012112947,below_lod,rbde_249,field control
+rbd-edna-plate04,1,A,7,A,4,1,polynomial,117.915,0.9547106654725327,0.9547106654725327,within_lod,rbde_250,field control
+rbd-edna-plate04,1,A,8,B,4,1,polynomial,371.899,4.080073516442503,4.080073516442503,within_lod,rbde_258,sample
+rbd-edna-plate04,1,B,7,C,4,1,polynomial,48.385,0.27078235975885406,0.27078235975885406,within_lod,rbde_251,filter control
+rbd-edna-plate04,1,B,8,D,4,1,polynomial,396.821,4.40323476667376,4.40323476667376,within_lod,rbde_259,sample
+rbd-edna-plate04,1,C,7,E,4,1,polynomial,791.713,9.541245104092162,9.541245104092162,within_lod,rbde_252,sample
+rbd-edna-plate04,1,C,8,F,4,1,polynomial,89.88,0.6583489236581703,0.6583489236581703,within_lod,rbde_260,field control
+rbd-edna-plate04,1,D,7,G,4,1,polynomial,463.384,5.270167428092316,5.270167428092316,within_lod,rbde_253,sample
+rbd-edna-plate04,1,D,8,H,4,1,polynomial,429.448,4.827643139649885,4.827643139649885,within_lod,rbde_261,sample
+rbd-edna-plate04,1,E,7,I,4,1,polynomial,34.038,0.15943162563624394,0.15943162563624394,below_lod,rbde_254,extraction control
+rbd-edna-plate04,1,E,8,J,4,1,polynomial,41.194,0.21299191409841983,0.21299191409841983,within_lod,rbde_262,field control
+rbd-edna-plate04,1,F,7,K,4,1,polynomial,43.168,0.22848803876334348,0.22848803876334348,within_lod,rbde_255,field control
+rbd-edna-plate04,1,F,8,L,4,1,polynomial,1091.747,13.348919603626603,13.348919603626603,within_lod,rbde_263,sample
+rbd-edna-plate04,1,G,7,M,4,1,polynomial,150.893,1.325590822196599,1.325590822196599,within_lod,rbde_256,field control
+rbd-edna-plate04,1,G,8,N,4,1,polynomial,24.826,0.09759459615436666,0.09759459615436666,below_lod,rbde_264,extraction control
+rbd-edna-plate04,1,H,7,O,4,1,polynomial,26.97,0.11117021234697262,0.11117021234697262,below_lod,rbde_257,field control
+rbd-edna-plate04,1,H,8,P,4,1,polynomial,1622.831,19.78143839033898,19.78143839033898,within_lod,rbde_265,sample
+rbd-edna-plate04,1,A,9,A,5,1,polynomial,47.98,0.2674328411599912,0.2674328411599912,within_lod,rbde_266,field control
+rbd-edna-plate04,1,A,10,B,5,1,polynomial,8829.794,81.84921111254768,81.84921111254768,within_lod,rbde_274,sample
+rbd-edna-plate04,1,B,9,C,5,1,polynomial,36.448,0.17698587214476438,0.17698587214476438,below_lod,rbde_267,field control
+rbd-edna-plate04,1,B,10,D,5,1,polynomial,354.033,3.8491248385583927,3.8491248385583927,within_lod,rbde_275,sample
+rbd-edna-plate04,1,C,9,E,5,1,polynomial,503.278,5.791162070363145,5.791162070363145,within_lod,rbde_268,sample
+rbd-edna-plate04,1,C,10,F,5,1,polynomial,40.401,0.2068500765935763,0.2068500765935763,within_lod,rbde_276,extraction control
+rbd-edna-plate04,1,D,9,G,5,1,polynomial,93.962,0.7001414987878049,0.7001414987878049,within_lod,rbde_269,field control
+rbd-edna-plate04,1,D,10,H,5,1,polynomial,1224.393,14.993055599776968,14.993055599776968,within_lod,rbde_277,sample
+rbd-edna-plate04,1,E,9,I,5,1,polynomial,28.013,0.11796456141788672,0.11796456141788672,below_lod,rbde_270,filter control
+rbd-edna-plate04,1,E,10,J,5,1,polynomial,651.001,7.718911071364701,7.718911071364701,within_lod,rbde_278,sample
+rbd-edna-plate04,1,F,9,K,5,1,polynomial,561.677,6.554126027866883,6.554126027866883,within_lod,rbde_271,sample
+rbd-edna-plate04,1,F,10,L,5,1,polynomial,56.229,0.3376598659619047,0.3376598659619047,within_lod,rbde_279,field control
+rbd-edna-plate04,1,G,9,M,5,1,polynomial,351.928,3.8219600784021988,3.8219600784021988,within_lod,rbde_272,sample
+rbd-edna-plate04,1,G,10,N,5,1,polynomial,325.791,3.48560539109606,3.48560539109606,within_lod,rbde_280,sample
+rbd-edna-plate04,1,H,9,O,5,1,polynomial,4811.676,51.650252582534144,51.650252582534144,within_lod,rbde_273,sample
+rbd-edna-plate04,1,H,10,P,5,1,polynomial,1019.422,12.442022725612485,12.442022725612485,within_lod,rbde_281,sample
+rbd-edna-plate04,1,A,11,A,6,1,polynomial,1305.604,15.987291453626549,15.987291453626549,within_lod,rbde_282,sample
+rbd-edna-plate04,1,A,12,B,6,1,polynomial,608.132,7.16043104376254,7.16043104376254,within_lod,rbde_290,field control
+rbd-edna-plate04,1,B,11,C,6,1,polynomial,1194.888,14.629505714202178,14.629505714202178,within_lod,rbde_283,sample
+rbd-edna-plate04,1,B,12,D,6,1,polynomial,239.384,2.391699503785459,2.391699503785459,within_lod,rbde_291,sample
+rbd-edna-plate04,1,C,11,E,6,1,polynomial,108.987,0.8581123962327414,0.8581123962327414,within_lod,rbde_284,filter control
+rbd-edna-plate04,1,C,12,F,6,1,polynomial,88.027,0.6395517853822387,0.6395517853822387,within_lod,rbde_292,sample
+rbd-edna-plate04,1,D,11,G,6,1,polynomial,3206.926,36.83910512154933,36.83910512154933,within_lod,rbde_285,sample
+rbd-edna-plate04,1,D,12,H,6,1,polynomial,559.058,6.519920360598585,6.519920360598585,within_lod,rbde_293,sample
+rbd-edna-plate04,1,E,11,I,6,1,polynomial,2164.557,25.946446329943836,25.946446329943836,within_lod,rbde_286,field control
+rbd-edna-plate04,1,E,12,J,6,1,polynomial,600.452,7.0602629309619305,7.0602629309619305,within_lod,rbde_294,sample
+rbd-edna-plate04,1,F,11,K,6,1,polynomial,144.976,1.2576282167421517,1.2576282167421517,within_lod,rbde_287,sample
+rbd-edna-plate04,1,F,12,L,6,1,polynomial,48.159,0.2689119213553018,0.2689119213553018,within_lod,rbde_295,field control
+rbd-edna-plate04,1,G,11,M,6,1,polynomial,1153.51,14.117572575059963,14.117572575059963,within_lod,rbde_288,sample
+rbd-edna-plate04,1,G,12,N,6,1,polynomial,126.569,1.0500391092337396,1.0500391092337396,within_lod,rbde_296,field control
+rbd-edna-plate04,1,H,11,O,6,1,polynomial,1379.944,16.889161198783967,16.889161198783967,within_lod,rbde_289,sample
+rbd-edna-plate04,1,H,12,P,6,1,polynomial,2515.509,29.74636906734095,29.74636906734095,within_lod,rbde_297,sample
+rbd-edna-plate04,2,A,1,A,7,1,polynomial,531.83,6.164219509153236,6.164219509153236,within_lod,rbde_202,sample
+rbd-edna-plate04,2,A,2,B,7,1,polynomial,2264.245,27.04055259184158,27.04055259184158,within_lod,rbde_210,sample
+rbd-edna-plate04,2,B,1,C,7,1,polynomial,25.867,0.10411889970777481,0.10411889970777481,below_lod,rbde_203,filter control
+rbd-edna-plate04,2,B,2,D,7,1,polynomial,26.769,0.1098748586199844,0.1098748586199844,below_lod,rbde_211,extraction control
+rbd-edna-plate04,2,C,1,E,7,1,polynomial,14663.652,115.34624740679385,115.34624740679385,above_lod,rbde_204,sample
+rbd-edna-plate04,2,C,2,F,7,1,polynomial,324.11,3.464038260709577,3.464038260709577,within_lod,rbde_212,sample
+rbd-edna-plate04,2,D,1,G,7,1,polynomial,864.321,10.473317577267299,10.473317577267299,within_lod,rbde_205,sample
+rbd-edna-plate04,2,D,2,H,7,1,polynomial,704.333,8.411795977586094,8.411795977586094,within_lod,rbde_213,sample
+rbd-edna-plate04,2,E,1,I,7,1,polynomial,58.434,0.35709955953580197,0.35709955953580197,within_lod,rbde_206,sample
+rbd-edna-plate04,2,E,2,J,7,1,polynomial,607.483,7.151967527051641,7.151967527051641,within_lod,rbde_214,sample
+rbd-edna-plate04,2,F,1,K,7,1,polynomial,465.94,5.303528604170244,5.303528604170244,within_lod,rbde_207,sample
+rbd-edna-plate04,2,F,2,L,7,1,polynomial,616.886,7.274567772831987,7.274567772831987,within_lod,rbde_215,sample
+rbd-edna-plate04,2,G,1,M,7,1,polynomial,41.849,0.21810131279597797,0.21810131279597797,within_lod,rbde_208,field control
+rbd-edna-plate04,2,G,2,N,7,1,polynomial,1009.027,12.311083060761094,12.311083060761094,within_lod,rbde_216,sample
+rbd-edna-plate04,2,H,1,O,7,1,polynomial,1866.498,22.601699593471142,22.601699593471142,within_lod,rbde_209,sample
+rbd-edna-plate04,2,H,2,P,7,1,polynomial,564.742,6.594154216995521,6.594154216995521,within_lod,rbde_217,sample
+rbd-edna-plate04,2,A,3,A,8,1,polynomial,360.354,3.930757044125386,3.930757044125386,within_lod,rbde_218,sample
+rbd-edna-plate04,2,A,4,B,8,1,polynomial,105.455,0.8204314046621465,0.8204314046621465,within_lod,rbde_226,sample
+rbd-edna-plate04,2,B,3,C,8,1,polynomial,362.983,3.9647348783342347,3.9647348783342347,within_lod,rbde_219,sample
+rbd-edna-plate04,2,B,4,D,8,1,polynomial,200.858,1.9180580676394585,1.9180580676394585,within_lod,rbde_227,sample
+rbd-edna-plate04,2,C,3,E,8,1,polynomial,388.65,4.29716886662332,4.29716886662332,within_lod,rbde_220,sample
+rbd-edna-plate04,2,C,4,F,8,1,polynomial,27.574,0.11509008231185414,0.11509008231185414,below_lod,rbde_228,extraction control
+rbd-edna-plate04,2,D,3,G,8,1,polynomial,334.082,3.592100766413265,3.592100766413265,within_lod,rbde_221,sample
+rbd-edna-plate04,2,D,4,H,8,1,polynomial,448.089,5.070616196710099,5.070616196710099,within_lod,rbde_229,sample
+rbd-edna-plate04,2,E,3,I,8,1,polynomial,71.499,0.4772732194627013,0.4772732194627013,within_lod,rbde_222,field control
+rbd-edna-plate04,2,E,4,J,8,1,polynomial,572.664,6.6975999950059775,6.6975999950059775,within_lod,rbde_230,sample
+rbd-edna-plate04,2,F,3,K,8,1,polynomial,289.19,3.018194154078515,3.018194154078515,within_lod,rbde_223,sample
+rbd-edna-plate04,2,F,4,L,8,1,polynomial,446.06,5.04415592476678,5.04415592476678,within_lod,rbde_231,sample
+rbd-edna-plate04,2,G,3,M,8,1,polynomial,516.169,5.959591139673242,5.959591139673242,within_lod,rbde_224,sample
+rbd-edna-plate04,2,G,4,N,8,1,polynomial,13.646,0.03696121591459205,0.03696121591459205,below_lod,rbde_232,filter control
+rbd-edna-plate04,2,H,3,O,8,1,polynomial,449.788,5.0927752119371235,5.0927752119371235,within_lod,rbde_225,sample
+rbd-edna-plate04,2,H,4,P,8,1,polynomial,758.113,9.107877348895006,9.107877348895006,within_lod,rbde_233,sample
+rbd-edna-plate04,2,A,5,A,9,1,polynomial,247.326,2.4906749457151895,2.4906749457151895,within_lod,rbde_234,sample
+rbd-edna-plate04,2,A,6,B,9,1,polynomial,55.343,0.32992423171450386,0.32992423171450386,within_lod,rbde_242,extraction control
+rbd-edna-plate04,2,B,5,C,9,1,polynomial,126.29,1.046941499165098,1.046941499165098,within_lod,rbde_235,field control
+rbd-edna-plate04,2,B,6,D,9,1,polynomial,1320.036,16.162991885731852,16.162991885731852,within_lod,rbde_243,sample
+rbd-edna-plate04,2,C,5,E,9,1,polynomial,1204.685,14.750358438039862,14.750358438039862,within_lod,rbde_236,sample
+rbd-edna-plate04,2,C,6,F,9,1,polynomial,383.188,4.2263269509294075,4.2263269509294075,within_lod,rbde_244,sample
+rbd-edna-plate04,2,D,5,G,9,1,polynomial,559.98,6.53196243479849,6.53196243479849,within_lod,rbde_237,sample
+rbd-edna-plate04,2,D,6,H,9,1,polynomial,817.125,9.868167473594111,9.868167473594111,within_lod,rbde_245,sample
+rbd-edna-plate04,2,E,5,I,9,1,polynomial,70.277,0.4657000349039118,0.4657000349039118,within_lod,rbde_238,field control
+rbd-edna-plate04,2,E,6,J,9,1,polynomial,130.818,1.097403887965309,1.097403887965309,within_lod,rbde_246,sample
+rbd-edna-plate04,2,F,5,K,9,1,polynomial,43.434,0.2305982588183166,0.2305982588183166,within_lod,rbde_239,field control
+rbd-edna-plate04,2,F,6,L,9,1,polynomial,313.643,3.329947758222617,3.329947758222617,within_lod,rbde_247,sample
+rbd-edna-plate04,2,G,5,M,9,1,polynomial,618.884,7.300611988994121,7.300611988994121,within_lod,rbde_240,sample
+rbd-edna-plate04,2,G,6,N,9,1,polynomial,387.857,4.286880653296494,4.286880653296494,within_lod,rbde_248,sample
+rbd-edna-plate04,2,H,5,O,9,1,polynomial,15.573,0.046003514520085546,0.046003514520085546,below_lod,rbde_241,filter control
+rbd-edna-plate04,2,H,6,P,9,1,polynomial,26.128,0.10577475090453405,0.10577475090453405,below_lod,rbde_249,field control
+rbd-edna-plate04,2,A,7,A,10,1,polynomial,130.207,1.0905712705813202,1.0905712705813202,within_lod,rbde_250,field control
+rbd-edna-plate04,2,A,8,B,10,1,polynomial,474.749,5.418529220192818,5.418529220192818,within_lod,rbde_258,sample
+rbd-edna-plate04,2,B,7,C,10,1,polynomial,56.401,0.33916667447245963,0.33916667447245963,within_lod,rbde_251,filter control
+rbd-edna-plate04,2,B,8,D,10,1,polynomial,526.826,6.0988374632775315,6.0988374632775315,within_lod,rbde_259,sample
+rbd-edna-plate04,2,C,7,E,10,1,polynomial,695.893,8.30230496156493,8.30230496156493,within_lod,rbde_252,sample
+rbd-edna-plate04,2,C,8,F,10,1,polynomial,98.418,0.7463379835337048,0.7463379835337048,within_lod,rbde_260,field control
+rbd-edna-plate04,2,D,7,G,10,1,polynomial,436,4.91301043526218,4.91301043526218,within_lod,rbde_253,sample
+rbd-edna-plate04,2,D,8,H,10,1,polynomial,596.065,7.003030968305574,7.003030968305574,within_lod,rbde_261,sample
+rbd-edna-plate04,2,E,7,I,10,1,polynomial,30.968,0.13784815764995123,0.13784815764995123,below_lod,rbde_254,extraction control
+rbd-edna-plate04,2,E,8,J,10,1,polynomial,45.797,0.24956665272348832,0.24956665272348832,within_lod,rbde_262,field control
+rbd-edna-plate04,2,F,7,K,10,1,polynomial,42.862,0.2260668977051718,0.2260668977051718,within_lod,rbde_255,field control
+rbd-edna-plate04,2,F,8,L,10,1,polynomial,1129.1,13.814429355269686,13.814429355269686,within_lod,rbde_263,sample
+rbd-edna-plate04,2,G,7,M,10,1,polynomial,125.776,1.0412388963824395,1.0412388963824395,within_lod,rbde_256,field control
+rbd-edna-plate04,2,G,8,N,10,1,polynomial,29.289,0.12643822141120595,0.12643822141120595,below_lod,rbde_264,extraction control
+rbd-edna-plate04,2,H,7,O,10,1,polynomial,30.739,0.13627501124647945,0.13627501124647945,below_lod,rbde_257,field control
+rbd-edna-plate04,2,H,8,P,10,1,polynomial,1698.102,20.66116923791443,20.66116923791443,within_lod,rbde_265,sample
+rbd-edna-plate04,2,A,10,B,11,1,polynomial,8533.741,79.87431945507628,79.87431945507628,within_lod,rbde_274,sample
+rbd-edna-plate04,2,B,10,D,11,1,polynomial,340.613,3.6761255078554567,3.6761255078554567,within_lod,rbde_275,sample
+rbd-edna-plate04,2,C,10,F,11,1,polynomial,37.283,0.18318636707436042,0.18318636707436042,below_lod,rbde_276,extraction control
+rbd-edna-plate04,2,D,10,H,11,1,polynomial,1306.681,16.00041350358135,16.00041350358135,within_lod,rbde_277,sample
+rbd-edna-plate04,2,E,10,J,11,1,polynomial,605.416,7.125010561597743,7.125010561597743,within_lod,rbde_278,sample
+rbd-edna-plate04,2,F,10,L,11,1,polynomial,48.848,0.27462465451574913,0.27462465451574913,within_lod,rbde_279,field control
+rbd-edna-plate04,2,G,10,N,11,1,polynomial,290.777,3.038356126307202,3.038356126307202,within_lod,rbde_280,sample
+rbd-edna-plate04,2,H,10,P,11,1,polynomial,1240.442,15.190284040682535,15.190284040682535,within_lod,rbde_281,sample
+rbd-edna-plate04,2,A,11,A,12,1,polynomial,1295.199,15.860432834298836,15.860432834298836,within_lod,rbde_282,sample
+rbd-edna-plate04,2,A,12,B,12,1,polynomial,554.255,6.457185663903882,6.457185663903882,within_lod,rbde_290,field control
+rbd-edna-plate04,2,B,11,C,12,1,polynomial,1232.643,15.094486940252725,15.094486940252725,within_lod,rbde_283,sample
+rbd-edna-plate04,2,B,12,D,12,1,polynomial,226.02,2.2261055205561604,2.2261055205561604,within_lod,rbde_291,sample
+rbd-edna-plate04,2,C,11,E,12,1,polynomial,96.076,0.7219851852859757,0.7219851852859757,within_lod,rbde_284,filter control
+rbd-edna-plate04,2,C,12,F,12,1,polynomial,68.059,0.44486002480971026,0.44486002480971026,within_lod,rbde_292,sample
+rbd-edna-plate04,2,D,11,G,12,1,polynomial,3233.923,37.106323813164195,37.106323813164195,within_lod,rbde_285,sample
+rbd-edna-plate04,2,D,12,H,12,1,polynomial,694.579,8.285252870218304,8.285252870218304,within_lod,rbde_293,sample
+rbd-edna-plate04,2,E,11,I,12,1,polynomial,2269.439,27.097231446356826,27.097231446356826,within_lod,rbde_286,field control
+rbd-edna-plate04,2,E,12,J,12,1,polynomial,686.858,8.185024994632984,8.185024994632984,within_lod,rbde_294,sample
+rbd-edna-plate04,2,F,11,K,12,1,polynomial,152.3,1.3418318832140048,1.3418318832140048,within_lod,rbde_287,sample
+rbd-edna-plate04,2,F,12,L,12,1,polynomial,40.444,0.20718186349651455,0.20718186349651455,within_lod,rbde_295,field control
+rbd-edna-plate04,2,G,11,M,12,1,polynomial,1383.83,16.93608869368056,16.93608869368056,within_lod,rbde_288,sample
+rbd-edna-plate04,2,G,12,N,12,1,polynomial,195.482,1.8529652459914698,1.8529652459914698,within_lod,rbde_296,field control
+rbd-edna-plate04,2,H,11,O,12,1,polynomial,1704.661,20.737462721381604,20.737462721381604,within_lod,rbde_289,sample
+rbd-edna-plate04,2,H,12,P,12,1,polynomial,3081.918,35.59265676486104,35.59265676486104,within_lod,rbde_297,sample

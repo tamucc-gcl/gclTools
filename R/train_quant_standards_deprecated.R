@@ -194,7 +194,7 @@ train_quant_standards <- function (quant_data, model = c("kit_reference", "linea
     geom_line (aes(y = fit), color = "red", size = 1) +
     geom_text(aes(label = sample_id), vjust = -1, hjust = 0.5, size = 4, color = "black") +
     labs (title = paste("Fitted", model, "model"),
-          subtitle = paste0(subtitle, "\nblue points = standards; grey polygons = samples"),?g
+          subtitle = paste0(subtitle, "\nblue points = standards; grey polygons = samples"),
           x = "Zeroed RFU",
           y = "DNA concentration (ng/well)") +
     theme_bw()

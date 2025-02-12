@@ -1,0 +1,17 @@
+plate_id,replicate,plate_row,plate_column,quant_row,quant_column,sample_volume,model,rfu,dna_per_well,ng_per_ul,quant_status,dna_extract_tube_id,sample_type
+rbd-edna-plate04,1,A,9,A,14,1,power,51.119,0.7294668696700551,0.7294668696700551,within_lod,rbde_266,field control
+rbd-edna-plate04,2,A,9,B,14,1,power,42.438,0.6130667791686697,0.6130667791686697,within_lod,rbde_266,field control
+rbd-edna-plate04,1,B,9,C,14,1,power,37.629,0.5479231807998354,0.5479231807998354,below_lod,rbde_267,field control
+rbd-edna-plate04,2,B,9,D,14,1,power,35.27,0.515770463981477,0.515770463981477,below_lod,rbde_267,field control
+rbd-edna-plate04,1,C,9,E,14,1,power,447.114,5.530165217638562,5.530165217638562,within_lod,rbde_268,sample
+rbd-edna-plate04,2,C,9,F,14,1,power,437.019,5.413450036201611,5.413450036201611,within_lod,rbde_268,sample
+rbd-edna-plate04,1,D,9,G,14,1,power,102.76,1.4003995684796986,1.4003995684796986,within_lod,rbde_269,field control
+rbd-edna-plate04,2,D,9,H,14,1,power,108.488,1.473181372780214,1.473181372780214,within_lod,rbde_269,field control
+rbd-edna-plate04,1,E,9,I,14,1,power,44.147,0.636097177149118,0.636097177149118,within_lod,rbde_270,filter control
+rbd-edna-plate04,2,E,9,J,14,1,power,28.467,0.42221067357737824,0.42221067357737824,below_lod,rbde_270,filter control
+rbd-edna-plate04,1,F,9,K,14,1,power,482.133,5.933723404599821,5.933723404599821,within_lod,rbde_271,sample
+rbd-edna-plate04,2,F,9,L,14,1,power,452.833,5.596209158729627,5.596209158729627,within_lod,rbde_271,sample
+rbd-edna-plate04,1,G,9,M,14,1,power,279.212,3.5623560794305074,3.5623560794305074,within_lod,rbde_272,sample
+rbd-edna-plate04,2,G,9,N,14,1,power,272.725,3.484988704246661,3.484988704246661,within_lod,rbde_272,sample
+rbd-edna-plate04,1,H,9,O,14,1,power,3842.766,41.24413517534095,41.24413517534095,within_lod,rbde_273,sample
+rbd-edna-plate04,2,H,9,P,14,1,power,3720.256,40.0146403690972,40.0146403690972,within_lod,rbde_273,sample

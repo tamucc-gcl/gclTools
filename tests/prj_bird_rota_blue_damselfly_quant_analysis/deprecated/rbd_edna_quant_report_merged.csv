@@ -1,0 +1,376 @@
+source_file,plate_id,sample_type,dna_extract_tube_id,model,n_reps,sample_volume_mean,rfu_mean,ng_per_ul_mean,ng_per_ul_ci_95,pct_reps_within_lod
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_01,power,2,1,668.189,5.156571042270166,0.5734226210045545,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_02,power,2,1,1488.725,12.071041042003356,11.255697023074193,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_03,power,2,1,406.1915,3.0406662850852753,2.9733724709654465,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_04,power,2,1,84.77449999999999,0.5763557593121713,0.715412101870116,50
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_05,power,2,1,229.8645,1.6612866625531977,0.8259469789489344,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,filter control,rbde_06,power,2,1,36.7055,0.2370116749856085,0.26281315265591826,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_07,power,2,1,422.9605,3.173547949193543,0.3942289547197134,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_08,power,2,1,28.1955,0.17948655195561192,0.6239238017386891,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_09,power,2,1,103.479,0.7120185404169458,0.22338131813408324,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_10,power,2,1,166.80599999999998,1.1819544802415938,0.19620806957330947,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_11,power,2,1,75.1325,0.5068863359365372,0.1042353870890478,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_12,power,2,1,1558.9054999999998,12.674310684968528,4.877650160598541,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,extraction control,rbde_13,power,2,1,27.179,0.17226537402380435,0.13701741076142895,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_14,power,2,1,1745.9945,14.294447420865628,3.060552788604212,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_15,power,2,1,75.122,0.5072389317670811,1.1015804195880825,50
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_16,power,2,1,2596.1144999999997,21.779288449730913,2.712747989628506,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_17,power,2,1,1478.158,11.979154708542763,7.8176088412248435,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_18,power,2,1,223.374,1.6116104742548358,1.1432892487253117,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_19,power,2,1,767.337,5.9744803739937185,8.471559173580982,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_20,power,2,1,48.9295,0.32150964376227553,0.04010346087329431,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_21,power,2,1,205.1965,1.472630518016914,0.2988603294033027,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_22,power,2,1,160.775,1.1366751327450857,0.49374470918983393,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_23,power,2,1,252.9025,1.8384808450669627,0.198109491526854,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_24,power,2,1,58.8015,0.39082656476164335,0.3532777350893236,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_25,power,2,1,71.075,0.47812411524797704,0.815408585943897,50
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_26,power,2,1,289.3365,2.120884623892983,0.873809709485216,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_27,power,2,1,686.5840000000001,5.307456499415801,1.535674564768834,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_28,power,2,1,450.6015,3.394151321857116,0.7005540441676535,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_29,power,2,1,307.9115,2.2660633866343307,2.3408858458607154,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_30,power,2,1,1907.578,15.706058433326396,17.72398042396245,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_31,power,2,1,587.8675000000001,4.50111948414799,0.6795779782145868,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_32,power,2,1,256.6565,1.867534952834357,0.8911377944684808,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_33,power,2,1,362.4255,2.693672429855583,0.8850008235331227,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_34,power,2,1,343.557,2.546275700373907,4.244962371417235,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_35,power,2,1,829.144,6.486419518791514,8.945868175424343,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_36,power,2,1,301.546,2.216473324391163,2.5600997720144925,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_37,power,2,1,409.238,3.0648936476624096,3.0350776469060374,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_38,power,2,1,338.25300000000004,2.5037240274293566,2.391558654257408,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,extraction control,rbde_39,power,2,1,34.589,0.2225209896498106,0.22104174533687912,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_40,power,2,1,431.249,3.2398894895460972,2.3082577334706404,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,filter control,rbde_41,power,2,1,55.1395,0.3653683136416275,0.8786480236419022,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_42,power,2,1,281.1735,2.057390950818025,0.5895282665609564,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_43,power,2,1,853.0675,6.683279077132789,3.3692172071434214,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_44,power,2,1,1668.1845,13.619096042339557,1.6746755147212542,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_45,power,2,1,437.1475,3.287157166395113,3.0468819242368355,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_46,power,2,1,33.543499999999995,0.21535012091475425,0.02082535889092288,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_47,power,2,1,2224.9765,18.493113895753687,19.561712369132294,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_48,power,2,1,739.2455,5.7406306867809285,2.095206284872247,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,extraction control,rbde_49,power,2,1,37.4875,0.243919543769612,1.4428749171945738,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_50,power,2,1,376.6975,2.806437892859865,1.1565951235077414,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_51,power,2,1,38.727999999999994,0.25129510559002544,0.7918513475771891,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_52,power,2,1,403.306,3.0173554802686517,1.4872257748502982,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_53,power,2,1,5497.2465,48.295489365849065,1.884971339097545,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_54,power,2,1,389.2785,2.906043903912483,1.259014557248156,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_55,power,2,1,1979.6895,16.33480726831813,11.721004238464817,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_56,power,2,1,278.4175,2.0359841074764824,0.5138177255134035,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_57,power,2,1,114.0235,0.7892994568302439,0.4351018041876405,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_58,power,2,1,2375.21,19.81892437867876,13.318889832195598,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_59,power,2,1,480.4575,3.633640088447377,2.528307558630118,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,filter control,rbde_60,power,2,1,36.637,0.23656848436064895,0.3214926527349596,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_61,power,2,1,58.648,0.3897210713755761,0.27413961926546054,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_62,power,2,1,481.3765,3.6407817827459104,1.2736349424319242,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_63,power,2,1,69.818,0.4689163368511777,0.1537236078877103,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_64,power,2,1,996.9045,7.885600380446837,5.063598333638413,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_65,power,2,1,94.3935,0.6458742477700858,0.3973130951830195,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_66,power,2,1,481.643,3.6428420250818023,0.11262263278084823,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_67,power,2,1,94.403,0.6459247773584919,0.3024071655568339,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_68,power,2,1,981.0335,7.751875701042266,1.4278576667517535,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_69,power,2,1,619.8315,4.761597828327224,2.711646972475673,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_70,power,2,1,607.1115,4.657785670748376,1.765967109075942,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_71,power,2,1,2019.406,16.681868508415775,6.971815621711813,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_72,power,2,1,249.5355,1.8125112335067444,0.23821138389916893,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_73,power,2,1,750.39,5.832401807734952,0.2323119805876945,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_74,power,2,1,53.427,0.35296897065527594,0.0848298057472139,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_75,power,2,1,114.9905,0.7963636759344686,0.03236638277130694,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_76,power,2,1,628.9425,4.835960783806405,2.9089281837971925,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_77,power,2,1,2655.9759999999997,22.31270038983118,1.4835709565663404,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_78,power,2,1,396.173,2.960772134555728,1.641919123495244,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_79,power,2,1,2126.745,17.62416172518725,2.8601270073004437,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_80,power,2,1,442.7355,3.331877041179282,3.370321428430632,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_81,power,2,1,1024.0055,8.112750804717074,0.4423388120293404,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_82,power,2,1,1345.2044999999998,10.83860943386853,6.842641202685912,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_83,power,2,1,308.68100000000004,2.271651723286198,0.3907832062905131,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_84,power,2,1,55.127,0.3649311937237567,0.25667060660743557,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,filter control,rbde_85,power,2,1,42.986999999999995,0.28044503968925594,0.5907931915899184,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_86,power,2,1,421.4025,3.1615652873832847,2.763015067670022,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_87,power,2,1,37.083,0.2395964923776104,0.25675048844504517,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_88,power,2,1,218.4345,1.573685576407709,0.43323094210839586,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_89,power,2,1,1636.6135,13.34634984707483,7.372792882631105,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_90,power,2,1,343.3065,2.5430361718062127,0.2463293635633852,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,extraction control,rbde_91,power,2,1,40.4115,0.26277594173064,0.7064447101628472,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_92,power,2,1,8600.687,77.66976446036266,0.7358160984983168,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,field control,rbde_93,power,2,1,71.6625,0.48214446585657345,0.4534998555741276,0
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_94,power,2,1,705.62,5.463861999851117,2.1424233165439683,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_95,power,2,1,382.4565,2.8533794345259276,4.814721326187674,100
+rbd_edna-plate01_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate01,sample,rbde_96,power,2,1,428.905,3.2247063217002783,8.23326442739869,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_100,power,2,1,569.264,4.959778385057597,2.623344341523773,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,filter control,rbde_101,power,2,1,47.896,0.3507451916081951,0.356318735783388,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_102,power,2,1,1186.0455000000002,10.880140473433991,4.276018004281285,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_103,power,2,1,287.67999999999995,2.3892454087110853,1.804759572371854,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_104,power,2,1,486.62,4.1930416883018395,0.5001084236849276,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_105,power,2,1,185.126,1.4912167020994644,2.3609067303084017,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_106,power,2,1,323.2075,2.7060718681848046,0.6053132357706235,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_107,power,2,1,1103.0075000000002,10.06698342058257,4.277098607499352,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_108,power,2,1,3739.445,37.186226487431064,17.719785113885,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_109,power,2,1,368.8275,3.1168106180409363,0.7581618620201347,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_110,power,2,1,1304.109,12.043039249036449,3.4880645543349753,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_111,power,2,1,522.385,4.523829192619998,1.7817177925519427,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_112,power,2,1,2567.441,24.865034050783596,6.695577238716485,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_113,power,2,1,252.18,2.0748815747866036,0.1354966269680718,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,extraction control,rbde_114,power,2,1,21.6305,0.14977825144844847,0.0935422450840242,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_115,power,2,1,547.6225,4.757980324048429,0.09800762225575887,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_116,power,2,1,535.8720000000001,4.6493223830378625,3.4649819910736106,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_117,power,2,1,33.034499999999994,0.23610977455002305,0.7403958194590591,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_118,power,2,1,759.663,6.75472424319979,5.5494884253358405,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_119,power,2,1,2634.6115,25.562289158654263,9.813715435196926,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_120,power,2,1,6054.013999999999,62.27312846492082,11.397421835100912,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_121,power,2,1,595.6435,5.2059164309998,1.224354289254573,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_122,power,2,1,938.88,8.47238121301459,2.1930007465909966,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_123,power,2,1,75.0035,0.5667419547181148,0.26021446327614756,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_124,power,2,1,72.691,0.5480389933769835,0.06110514986785285,50
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_125,power,2,1,894.851,8.047812419010178,1.4975596053461095,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_126,power,2,1,20.2665,0.13974757615512437,0.21268325037988975,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_127,power,2,1,517.5740000000001,4.479632441149818,3.3840403407209303,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_128,power,2,1,493.048,4.253383647341242,4.678964333233063,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_129,power,2,1,289.438,2.4055500455854126,3.356376142907603,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_130,power,2,1,2660.8785,25.839504840560053,25.534127842345143,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_131,power,2,1,1792.0375,16.92245768577869,3.7541235644979873,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,extraction control,rbde_132,power,2,1,35.3475,0.2534154669742089,0.321447051797304,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_133,power,2,1,375.9945,3.181702424111137,1.0149901686434395,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_134,power,2,1,3081.4004999999997,30.227404942318884,5.731130798609662,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_135,power,2,1,270.64,2.2386652556501847,3.0049958082925596,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,filter control,rbde_136,power,2,1,24.055,0.16794448435950043,0.3435040168929812,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_137,power,2,1,2734.776,26.602996287088217,1.242420996523932,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_138,power,2,1,468.0525,4.022670403894661,3.550816237131051,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_139,power,2,1,325.257,2.724459477081562,0.7867483018954265,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_140,power,2,1,295.55150000000003,2.459016264984187,0.5199457900745551,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_141,power,2,1,270.04200000000003,2.2332808769407264,2.827283011253488,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_142,power,2,1,819.3195000000001,7.323030249007864,1.5532752751920735,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_143,power,2,1,265.91700000000003,2.196157128654514,0.9552637360061148,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_144,power,2,1,2681.72,26.05239948350384,13.418559406568296,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,filter control,rbde_145,power,2,1,20.442,0.1410555603021761,0.23376384035854036,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_146,power,2,1,363.7595,3.0711077852070896,1.4962938405475694,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_147,power,2,1,342.265,2.8773964212257717,1.8310555462031708,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_148,power,2,1,562.8140000000001,4.900384318761423,4.919106783143311,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_149,power,2,1,751.3009999999999,6.676451032998875,8.470652106219575,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_150,power,2,1,763.2484999999999,6.788238312830618,3.2663849729879137,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_151,power,2,1,1327.8960000000002,12.278103824592456,1.2675695352398553,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_152,power,2,1,66.34700000000001,0.49701768008307834,0.13996853036463786,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_153,power,2,1,2109.007,20.1525461347315,28.00247899271715,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,extraction control,rbde_154,power,2,1,17.618000000000002,0.1202427244229582,0.04900262713299273,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_155,power,2,1,497.7705,4.296010660325324,1.209244447470189,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_156,power,2,1,278.69449999999995,2.3091968189770116,0.05132429946640184,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_157,power,2,1,70.513,0.5306380065806819,0.6373159530830518,50
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_158,power,2,1,611.133,5.350900858514227,0.804891686139095,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_159,power,2,1,684.7695,6.043869881182085,2.0778738483253933,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_160,power,2,1,566.8445,4.937628050124897,4.087117933534537,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_161,power,2,1,221.4645,1.8056560866449236,0.6466558506301535,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_162,power,2,1,133.5435,1.050914921363809,0.8544245949000566,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_163,power,2,1,1838.1685,17.388934610389104,0.8115507193092775,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_164,power,2,1,3080.2095,30.214712316168395,2.1833437405608342,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_165,power,2,1,1554.27,14.531623705608428,6.694555917628139,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_166,power,2,1,356.92,3.0092033463076255,0.05124957811410603,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_167,power,2,1,2391.5825,23.04668259064295,5.861935165504233,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_168,power,2,1,721.4465,6.392336699614087,6.911037926128093,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_169,power,2,1,738.074,6.548591232276149,0.5423492493637321,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_170,power,2,1,315.0025,2.632683494689859,1.1105235578928363,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_171,power,2,1,374.356,3.167149744906207,2.3336833028382435,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_172,power,2,1,78.6155,0.596002201267918,0.2796317703629531,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_173,power,2,1,26.5995,0.1868731927338254,0.08105990753206264,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_174,power,2,1,2399.0935,23.12443389973003,8.133384140696865,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_175,power,2,1,1113.1265,10.165638174573342,2.769232872172288,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_176,power,2,1,405.444,3.4495656278155433,2.929332401690596,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_177,power,2,1,75.273,0.568946565110765,0.371221952036364,50
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_178,power,2,1,440.9765,3.77353744494034,0.20847396934414383,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_179,power,2,1,305.8075,2.550429092134526,0.05755767764956251,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_180,power,2,1,45.8725,0.3348396304296506,0.01632872326746216,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_181,power,2,1,293.52700000000004,2.441015384430713,0.7295271930774612,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_182,power,2,1,1857.5815,17.585759748741367,4.294010057268946,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_183,power,2,1,2215.893,21.240367805316808,11.035021450037656,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_184,power,2,1,320.038,2.6776597972820375,0.29126923906566937,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_185,power,2,1,412.825,3.516317560050777,0.5091896283133194,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,extraction control,rbde_186,power,2,1,18.091,0.1237043028540081,0.06759658968364558,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,field control,rbde_187,power,2,1,31.748,0.22582537549017265,0.02447246444558446,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,filter control,rbde_188,power,2,1,23.596,0.16437665796357798,0.01165221396706619,0
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_189,power,2,1,852.4214999999999,7.640190359948475,2.270369030857033,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_190,power,2,1,1630.387,15.294183172791035,4.576097192141367,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_191,power,2,1,107.5755,0.8336966754345667,0.21146022396340997,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_192,power,2,1,1107.346,10.109869832028458,6.58742969036368,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_97,power,2,1,413.594,3.5233192487799414,0.32193449660660545,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_98,power,2,1,1149.0045,10.516648995775558,2.2912411451794847,100
+rbd_edna-plate02_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate02,sample,rbde_99,power,2,1,172.0515,1.3780824084649668,0.02565132188000302,100
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,field control,rbde_193,power,2,1,62.225,0.5306224451882586,0.5494982932067868,100
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,field control,rbde_194,power,2,1,30.897,0.2507049079519506,0.23611354761394676,0
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,sample,rbde_195,power,2,1,1052.1125,10.962310100260122,7.375555950668904,100
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,extraction control,rbde_196,power,2,1,22.0405,0.1749370435441948,0.5507944826514981,0
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,sample,rbde_197,power,2,1,1696.0215,18.278357033547024,3.5481472358027495,100
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,field control,rbde_198,power,2,1,57.038,0.48335472663886025,0.3856472263266866,50
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,field control,rbde_199,power,2,1,88.0055,0.7693236015824132,1.1520006890454846,100
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,filter control,rbde_200,power,2,1,39.635000000000005,0.3279248210677439,1.0124307936523815,0
+rbd_edna-plate03_AccuClear_2024-05-14_quant_report_summarized.csv,rbd-edna-plate03,sample,rbde_201,power,2,1,900.3665000000001,9.27752694526146,3.003842174374659,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_202,polynomial,2,1,552.6065000000001,6.435603590831699,3.448261703945305,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_203,polynomial,2,1,30.6935,0.13714212975276893,0.4195999220014908,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_204,polynomial,2,1,14348.786,113.74314657751754,20.36932734951638,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_205,polynomial,2,1,943.1965,11.474348532784417,12.719304268049084,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_206,polynomial,2,1,70.339,0.4693640909339484,1.4264561205555613,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_207,polynomial,2,1,514.8115,5.94192642084337,8.111613361775666,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_208,polynomial,2,1,47.9255,0.26820102149994257,0.6365771560152873,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_209,polynomial,2,1,1839.65,22.29435831929699,3.905141153533586,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_210,polynomial,2,1,2314.9055,27.590503445482945,6.987788141201245,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,extraction control,rbde_211,polynomial,2,1,33.0785,0.15447537713560938,0.5667033195990812,50
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_212,polynomial,2,1,352.7645,3.833716047274102,4.697201642504743,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_213,polynomial,2,1,751.938,9.026925910972508,7.815966872957299,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_214,polynomial,2,1,659.6054999999999,7.829822205493512,8.612960325656275,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_215,polynomial,2,1,691.4755,8.24255966078369,12.299503111270626,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_216,polynomial,2,1,1112.719,13.602954930509728,16.414788469930944,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_217,polynomial,2,1,598.5105,7.034654390153246,5.597085386462471,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_218,polynomial,2,1,345.6975,3.7418869872076694,2.3998216117294695,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_219,polynomial,2,1,357.9495,3.899721843922281,0.8260689257582575,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_220,polynomial,2,1,405.391,4.514769694224702,2.7648806662642142,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_221,polynomial,2,1,333.203,3.5808019975599774,0.1435644703165877,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_222,polynomial,2,1,79.1935,0.5526633332394111,0.957922220730378,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_223,polynomial,2,1,283.255,2.942966873114964,0.9558532336686164,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_224,polynomial,2,1,504.4249999999999,5.80615724249358,1.9495625110339712,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_225,polynomial,2,1,469.0055,5.34363351649,3.18745697741851,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_226,polynomial,2,1,110.296,0.8724428946423965,0.6608686403225567,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_227,polynomial,2,1,204.944,1.9677881382820028,0.6318804591285971,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,extraction control,rbde_228,polynomial,2,1,28.841500000000003,0.1235323026235594,0.10726857970841956,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_229,polynomial,2,1,448.02,5.0697163172941115,0.01143405209740738,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_230,polynomial,2,1,576.4390000000001,6.746883806014928,0.626210192858667,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_231,polynomial,2,1,438.8355,4.949988419114096,1.1965116063179055,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_232,polynomial,2,1,14.8495,0.04266005245435489,0.07241058383222006,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_233,polynomial,2,1,770.1510000000001,9.26320441948922,1.973617560040363,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_234,polynomial,2,1,234.6735,2.3337395385658377,1.9940534135945984,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_235,polynomial,2,1,118.7885,0.9648793280195496,1.0426987476703478,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_236,polynomial,2,1,1326.5214999999998,16.231281031706164,18.81690567355086,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_237,polynomial,2,1,542.158,6.299132599409886,2.958383557137446,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_238,polynomial,2,1,73.25399999999999,0.49418735748486986,0.361965753099105,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_239,polynomial,2,1,41.6515,0.21667771468191316,0.17687728383609858,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_240,polynomial,2,1,620.0029999999999,7.315196902104663,0.18531889204185947,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_241,polynomial,2,1,17.124499999999998,0.05395299531184214,0.10100773048634748,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,extraction control,rbde_242,polynomial,2,1,62.03,0.39047202589248065,0.7693326691491389,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_243,polynomial,2,1,1317.7615,16.135317324571417,0.35163864008829493,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_244,polynomial,2,1,421.68,4.72728803703828,6.365314124955775,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_245,polynomial,2,1,830.575,10.040788936274115,2.1933636466700586,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_246,polynomial,2,1,128.05100000000002,1.0665946359514331,0.3914686638567091,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_247,polynomial,2,1,367.894,4.031243761840938,8.910810602635495,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_248,polynomial,2,1,376.1005,4.134605583665593,1.934838210945491,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_249,polynomial,2,1,26.7575,0.10982343551283176,0.05144341554523,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_250,polynomial,2,1,124.061,1.0226409680269264,0.8631363320464176,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_251,polynomial,2,1,52.393,0.3049745171156568,0.4344525517470379,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_252,polynomial,2,1,743.803,8.921775032828545,7.871113553408234,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_253,polynomial,2,1,449.692,5.091588931677248,2.2690549369280935,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,extraction control,rbde_254,polynomial,2,1,32.503,0.1486398916430976,0.13712198157525363,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_255,polynomial,2,1,43.015,0.22727746823425765,0.01538175699014399,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_256,polynomial,2,1,138.3345,1.1834148592895193,1.8065168932601348,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_257,polynomial,2,1,28.8545,0.12372261179672604,0.15949335733881342,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_258,polynomial,2,1,423.324,4.74930136831766,8.503346101076147,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_259,polynomial,2,1,461.8235,5.251036114975646,10.77233750712871,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_260,polynomial,2,1,94.149,0.7023434535959376,0.5590035046610377,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_261,polynomial,2,1,512.7565,5.91533705397773,13.820461565740851,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_262,polynomial,2,1,43.4955,0.23127928341095408,0.2323630585710984,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_263,polynomial,2,1,1110.4235,13.581674479448145,2.9574311055314224,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,extraction control,rbde_264,polynomial,2,1,27.0575,0.1120164087827863,0.18324650392344968,0
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_265,polynomial,2,1,1660.4665,20.221303814126703,5.589020131011069,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_266,polynomial,2,1,811.641,9.744687593052612,120.41993921443216,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_267,polynomial,2,1,740.1635,8.917754080254568,111.06199040368996,50
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_268,polynomial,2,1,509.5695,5.87336442332572,1.044479926537783,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_269,polynomial,2,1,1915.7405,21.33458251846143,262.1854322124944,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_270,polynomial,2,1,1286.9385,15.093172049880836,190.27805231510663,50
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_271,polynomial,2,1,613.0795,7.22419977750198,8.514094251199806,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_272,polynomial,2,1,1059.189,12.637650151349591,112.0139629575324,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_273,polynomial,2,1,5769.199500000001,59.34493060283833,97.77015430492844,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_274,polynomial,2,1,8681.7675,80.86176528381198,12.546688865797517,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_275,polynomial,2,1,347.323,3.7626251732069247,1.0990824575663491,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,extraction control,rbde_276,polynomial,2,1,38.842,0.19501822183396836,0.1503379689842614,50
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_277,polynomial,2,1,1265.537,15.496734551679156,6.3998478841711215,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_278,polynomial,2,1,628.2085,7.4219608164812225,3.773110735008743,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_279,polynomial,2,1,52.5385,0.30614226023882696,0.40046915111145776,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_280,polynomial,2,1,308.284,3.2619807587016307,2.84142036325542,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_281,polynomial,2,1,1129.932,13.81615338314751,17.459985468894377,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_282,polynomial,2,1,1300.4015,15.923862143962692,0.805945794863185,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_283,polynomial,2,1,1213.7655,14.861996327227452,2.9540733283378886,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_284,polynomial,2,1,102.5315,0.7900487907593585,0.8648301062270232,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_285,polynomial,2,1,3220.4245,36.97271446735677,1.6976677024955993,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_286,polynomial,2,1,2216.9979999999996,26.52183888815033,7.311055648243042,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_287,polynomial,2,1,148.638,1.2997300499780784,0.5349545128639668,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_288,polynomial,2,1,1268.67,15.526830634370262,17.906321427700867,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_289,polynomial,2,1,1542.3025,18.813311960082785,24.448653516329195,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_290,polynomial,2,1,581.1935,6.808808353833211,4.467789888126527,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_291,polynomial,2,1,232.702,2.3089025121708096,1.052035526995074,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_292,polynomial,2,1,78.043,0.5422059050959744,1.2368966851404248,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_293,polynomial,2,1,626.8185,7.4025866154084445,11.21533814732662,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_294,polynomial,2,1,643.655,7.622643962797458,7.1457285302433835,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_295,polynomial,2,1,44.3015,0.23804689242590815,0.39217737676483017,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_296,polynomial,2,1,161.0255,1.4515021776126047,5.1010719408347605,100
+rbd_edna-plate04_AccuClear_2024-08-13_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_297,polynomial,2,1,2798.7135,32.669512916101,37.1420642156348,100
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_266,power,2,1,46.7785,0.8204424361177654,0.8730748358684104,100
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_267,power,2,1,36.4495,0.6553074522983979,0.2430843748639468,0
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_268,power,2,1,442.0665,6.225445062234115,0.814779280269572,100
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,field control,rbde_269,power,2,1,105.624,1.711165048510091,0.531862609298577,100
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,filter control,rbde_270,power,2,1,36.307,0.6516693574038537,1.6177139109366727,50
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_271,power,2,1,467.483,6.5472027865497875,2.351967989331635,100
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_272,power,2,1,275.9685,4.0697933933192525,0.548286824793512,100
+rbd_edna-plate04_Column-9_AccuClear_2024-08-15_quant_report_summarized.csv,rbd-edna-plate04,sample,rbde_273,power,2,1,3781.511,43.16170639533043,8.01418180098531,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_274-2,power,2,1,9110.927,153.82023944835774,77.74347623695705,0
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_275-2,power,2,1,484.3985,9.08438656613836,1.5052735177296122,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,extraction control,rbde_276-2,power,2,1,22.108,0.4629367900055093,0.7350159138192248,0
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_277-2,power,2,1,1283.7575000000002,23.245949615692425,28.21008305419091,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_278-2,power,2,1,710.7845,13.145263714472843,18.561691699974364,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_279-2,power,2,1,94.329,1.8752715430496296,2.8781893068903046,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_280-2,power,2,1,432.9175,8.150586498924437,8.759223374552116,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_281-2,power,2,1,1716.963,30.77339601839795,5.973073761700848,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_282-2,power,2,1,484.2275,9.079022163228617,13.46291012042327,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_283-2,power,2,1,1759.928,31.511115430407127,35.410560874088716,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,filter control,rbde_284-2,power,2,1,18.049,0.3803793844306492,1.1848530544213525,0
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_285-2,power,2,1,3774.084,65.75859742836602,48.97247303805826,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_286-2,power,2,1,229.0975,4.412393825334281,5.71603937629095,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_287-2,power,2,1,354.26149999999996,6.718015916217695,6.192880777004414,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_288-2,power,2,1,609.03,11.325809637806334,16.260676610481653,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_289-2,power,2,1,2035.4495,36.25511231418608,40.161521763223625,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_290-2,power,2,1,54.3545,1.1021675295673985,1.53609483993608,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_291-2,power,2,1,138.186,2.7094543134211273,5.158398224351029,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_292-2,power,2,1,151.368,2.959454067538311,0.9399253648308756,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_293-2,power,2,1,569.2460000000001,10.6141154994243,0.9770204254801188,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_294-2,power,2,1,437.0365,8.226228974095061,3.8819739263878943,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_295-2,power,2,1,111.0035,2.194356557034875,1.839005391391763,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_296-2,power,2,1,141.1005,2.765683912195452,0.3668059733046006,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_297-2,power,2,1,123.526,2.4327136248856833,1.1318600372138712,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_298,power,2,1,6839.745,116.66515752381572,75.90517236599146,0
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_299,power,2,1,9532.1605,160.66951393609978,98.30424645449514,0
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_300,power,2,1,109.1045,2.158308359423885,0.5405766831361378,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_301,power,2,1,474.454,8.904365118369125,3.543483449505327,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_302,power,2,1,47.609,0.9699192469556848,1.5223351902367577,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_303,power,2,1,710.266,13.139033555878768,0.5251078789371597,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_304,power,2,1,536.672,10.027886203348436,0.4791261110720011,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,field control,rbde_305,power,2,1,71.201,1.4295784990644584,2.776309969623199,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_306,power,2,1,441.3730000000001,8.304829155069562,4.6596905409717415,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_307,power,2,1,493.153,9.242661264130309,0.7104214471313558,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_308,power,2,1,161.27800000000002,3.146086596030843,0.4163177026283534,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_309,power,2,1,461.1145,8.66299118701902,1.3097580257469894,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,extraction control,rbde_310,power,2,1,56.3505,1.1413408450072593,0.8974867085109206,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,filter control,rbde_311,power,2,1,24.8285,0.5178970881178788,0.06427055010125679,0
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_312,power,2,1,886.1125,16.262652043780264,0.7450228978061848,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_313,power,2,1,1050.6370000000002,19.16491045042656,0.9167056559395442,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_314,power,2,1,155.785,3.0426931888361355,0.7159420407180699,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_315,power,2,1,1320.111,23.882488271937422,19.86823055001146,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_316,power,2,1,334.37350000000004,6.354085811979489,5.451286164160414,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_317,power,2,1,743.7945,13.735663829257582,10.3745425923296,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_318,power,2,1,230.9095,4.446242755905978,5.029608637832273,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_319,power,2,1,681.0385,12.617331846645133,0.444528406043867,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_320,power,2,1,1296.344,23.469497186553404,5.467884864060773,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_321,power,2,1,264.325,5.064849086869355,6.616358066910186,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_322,power,2,1,754.9825,13.93518657049789,8.159503799031551,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_323,power,2,1,464.07,8.716544944618725,0.06144013211514215,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_324,power,2,1,605.0455,11.256966525603156,2.497174419332399,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_325,power,2,1,769.8065,14.199330226743076,4.200424668649834,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_326,power,2,1,245.39,4.7154699363073345,0.7912587739530381,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_327,power,2,1,659.336,12.229431467635456,0.4260698757344225,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_328,power,2,1,256.7605,4.92598827450351,0.01727557444678617,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_329,power,2,1,693.9565,12.847879891550535,3.8565424189994735,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_330,power,2,1,539.2345,10.073795426734248,4.736127819524667,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_331,power,2,1,1458.9235,26.30124035397816,8.490899440783929,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_332,power,2,1,1517.2395,27.31449968258043,2.1878085881063347,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_333,power,2,1,1637.866,29.403160914532997,24.297566130683787,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_334,power,2,1,451.242,8.483212472518456,8.134213632137968,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,filter control,rbde_335,power,2,1,41.9225,0.8581992787618159,0.3188942588537668,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_336,power,2,1,478.8375,8.982082503436004,11.698479625455349,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_337,power,2,1,62.1255,1.2540000854278872,0.3374318846491352,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_338,power,2,1,520.332,9.733290506037244,2.0653011375173436,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_339,power,2,1,3274.279,57.34353660412615,24.373632661548477,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_340,power,2,1,970.522,17.7537885471735,3.55287420874445,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_341,power,2,1,1539.38,27.698601204301266,5.743403383956177,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,extraction control,rbde_342,power,2,1,70.2805,1.412273955999631,1.0795029615970362,100
+rbd_edna-plate05_AccuClear_2024-08-27_quant_report_summarized.csv,rbd-edna-plate05,sample,rbde_343,power,2,1,431.0005,8.11684062886885,1.2760136332162892,100

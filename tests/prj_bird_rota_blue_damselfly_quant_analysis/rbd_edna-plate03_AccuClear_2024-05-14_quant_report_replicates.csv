@@ -1,0 +1,19 @@
+plate_id,replicate,plate_row,plate_column,quant_row,quant_column,sample_volume,model,rfu,dna_per_well,ng_per_ul,quant_status,dna_extract_tube_id,sample_type
+rbd-edna-plate03,1,A,1,N,1,1,polynomial,66.962,0.5964099364551456,0.5964099364551456,within_lod,rbde_193,field control
+rbd-edna-plate03,2,A,1,N,2,1,polynomial,57.488,0.5051989827682524,0.5051989827682524,within_lod,rbde_193,field control
+rbd-edna-plate03,1,B,1,N,3,1,polynomial,28.758,0.2348683155609768,0.2348683155609768,below_lod,rbde_194,field control
+rbd-edna-plate03,2,B,1,N,4,1,polynomial,33.036,0.27423639816678486,0.27423639816678486,below_lod,rbde_194,field control
+rbd-edna-plate03,1,C,1,N,5,1,polynomial,1104.141,10.575206824409593,10.575206824409593,within_lod,rbde_195,sample
+rbd-edna-plate03,2,C,1,N,6,1,polynomial,1000.084,9.607909027295294,9.607909027295294,within_lod,rbde_195,sample
+rbd-edna-plate03,1,D,1,N,7,1,polynomial,27.154,0.22022685252005833,0.22022685252005833,below_lod,rbde_196,extraction control
+rbd-edna-plate03,2,D,1,N,8,1,polynomial,16.927,0.12893909448432414,0.12893909448432414,below_lod,rbde_196,extraction control
+rbd-edna-plate03,1,E,1,N,9,1,polynomial,1720.217,16.16978177335767,16.16978177335767,within_lod,rbde_197,sample
+rbd-edna-plate03,2,E,1,N,10,1,polynomial,1671.826,15.737802588427801,15.737802588427801,within_lod,rbde_197,sample
+rbd-edna-plate03,1,F,1,N,11,1,polynomial,60.383,0.5329965137577668,0.5329965137577668,within_lod,rbde_198,field control
+rbd-edna-plate03,2,F,1,N,12,1,polynomial,53.693,0.4688725205827134,0.4688725205827134,below_lod,rbde_198,field control
+rbd-edna-plate03,1,G,1,N,13,1,polynomial,97.696,0.8957858941867253,0.8957858941867253,within_lod,rbde_199,field control
+rbd-edna-plate03,2,G,1,N,14,1,polynomial,78.315,0.7064901471480102,0.7064901471480102,within_lod,rbde_199,field control
+rbd-edna-plate03,1,H,1,N,15,1,polynomial,48.651,0.42083376388938787,0.42083376388938787,below_lod,rbde_200,filter control
+rbd-edna-plate03,2,H,1,N,16,1,polynomial,30.619,0.25194037501045524,0.25194037501045524,below_lod,rbde_200,filter control
+rbd-edna-plate03,1,A,2,N,17,1,polynomial,921.791,8.875326779224162,8.875326779224162,within_lod,rbde_201,sample
+rbd-edna-plate03,2,A,2,N,19,1,polynomial,878.942,8.472591316850787,8.472591316850787,within_lod,rbde_201,sample

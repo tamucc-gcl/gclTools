@@ -1,0 +1,193 @@
+plate_id,replicate,plate_row,plate_column,quant_row,quant_column,sample_volume,model,rfu,dna_per_well,ng_per_ul,quant_status,dna_extract_tube_id,sample_type
+rbd-edna-plate02,1,A,1,A,1,1,power,410.815,3.4979824544112774,3.4979824544112774,within_lod,rbde_97,sample
+rbd-edna-plate02,1,A,2,A,2,1,power,206.693,1.6770240914284649,1.6770240914284649,within_lod,rbde_105,sample
+rbd-edna-plate02,1,A,3,A,3,1,power,253.391,2.0855453905979693,2.0855453905979693,within_lod,rbde_113,sample
+rbd-edna-plate02,1,A,4,A,4,1,power,605.945,5.302275203322178,5.302275203322178,within_lod,rbde_121,sample
+rbd-edna-plate02,1,A,5,A,5,1,power,259.726,2.1413975143931547,2.1413975143931547,within_lod,rbde_129,sample
+rbd-edna-plate02,1,A,6,A,6,1,power,2744.168,26.700776940109396,26.700776940109396,within_lod,rbde_137,sample
+rbd-edna-plate02,1,A,7,A,7,1,power,22.935,0.15945317353227084,0.15945317353227084,below_lod,rbde_145,filter control
+rbd-edna-plate02,1,A,8,A,8,1,power,1893.4,17.948703242684136,17.948703242684136,within_lod,rbde_153,sample
+rbd-edna-plate02,1,A,9,A,9,1,power,227.297,1.8565490058176424,1.8565490058176424,within_lod,rbde_161,sample
+rbd-edna-plate02,1,A,10,A,10,1,power,742.569,6.5912750438961245,6.5912750438961245,within_lod,rbde_169,sample
+rbd-edna-plate02,1,A,11,A,11,1,power,78.885,0.5981623663467935,0.5981623663467935,within_lod,rbde_177,sample
+rbd-edna-plate02,1,A,12,A,12,1,power,408.429,3.4762434672051254,3.4762434672051254,within_lod,rbde_185,sample
+rbd-edna-plate02,1,B,1,C,1,1,power,1167.413,10.696973584647978,10.696973584647978,within_lod,rbde_98,sample
+rbd-edna-plate02,1,B,2,C,2,1,power,317.891,2.6584326833661236,2.6584326833661236,within_lod,rbde_106,sample
+rbd-edna-plate02,1,B,3,C,3,1,power,20.637,0.14241631710012898,0.14241631710012898,below_lod,rbde_114,extraction control
+rbd-edna-plate02,1,B,4,C,4,1,power,921.009,8.299788311190214,8.299788311190214,within_lod,rbde_122,sample
+rbd-edna-plate02,1,B,5,C,5,1,power,2467.472,23.829925397089475,23.829925397089475,within_lod,rbde_130,sample
+rbd-edna-plate02,1,B,6,C,6,1,power,437.665,3.743215105411877,3.743215105411877,within_lod,rbde_138,sample
+rbd-edna-plate02,1,B,7,C,7,1,power,350.726,2.9533469060448323,2.9533469060448323,within_lod,rbde_146,sample
+rbd-edna-plate02,1,B,8,C,8,1,power,17.09,0.1163861340287013,0.1163861340287013,below_lod,rbde_154,extraction control
+rbd-edna-plate02,1,B,9,C,9,1,power,141.529,1.1181595953353767,1.1181595953353767,within_lod,rbde_162,sample
+rbd-edna-plate02,1,B,10,C,10,1,power,305.231,2.545283395214745,2.545283395214745,within_lod,rbde_170,sample
+rbd-edna-plate02,1,B,11,C,11,1,power,442.768,3.7899447021562276,3.7899447021562276,within_lod,rbde_178,sample
+rbd-edna-plate02,1,B,12,C,12,1,power,18.818,0.1290242698376344,0.1290242698376344,below_lod,rbde_186,extraction control
+rbd-edna-plate02,1,C,1,E,1,1,power,172.287,1.3801012112792308,1.3801012112792308,within_lod,rbde_99,sample
+rbd-edna-plate02,1,C,2,E,2,1,power,1068.545,9.730368459915173,9.730368459915173,within_lod,rbde_107,sample
+rbd-edna-plate02,1,C,3,E,3,1,power,546.793,4.750266956895079,4.750266956895079,within_lod,rbde_115,sample
+rbd-edna-plate02,1,C,4,E,4,1,power,77.536,0.5872212771183997,0.5872212771183997,within_lod,rbde_123,field control
+rbd-edna-plate02,1,C,5,E,5,1,power,1762.803,16.627001753622174,16.627001753622174,within_lod,rbde_131,sample
+rbd-edna-plate02,1,C,6,E,6,1,power,332.164,2.7863779112821025,2.7863779112821025,within_lod,rbde_139,sample
+rbd-edna-plate02,1,C,7,E,7,1,power,358.283,3.0215036180026456,3.0215036180026456,within_lod,rbde_147,sample
+rbd-edna-plate02,1,C,8,E,8,1,power,508.074,4.391180262309421,4.391180262309421,within_lod,rbde_155,sample
+rbd-edna-plate02,1,C,9,E,9,1,power,1844.477,17.45280503717349,17.45280503717349,within_lod,rbde_163,sample
+rbd-edna-plate02,1,C,10,E,10,1,power,354.069,2.983484885784724,2.983484885784724,within_lod,rbde_171,sample
+rbd-edna-plate02,1,C,11,E,11,1,power,306.315,2.554958979606408,2.554958979606408,within_lod,rbde_179,sample
+rbd-edna-plate02,1,C,12,E,12,1,power,31.495,0.22389935076810033,0.22389935076810033,below_lod,rbde_187,field control
+rbd-edna-plate02,1,D,1,G,1,1,power,591.407,5.166240062324223,5.166240062324223,within_lod,rbde_100,sample
+rbd-edna-plate02,1,D,2,G,2,1,power,3870.486,38.58080382045928,38.58080382045928,within_lod,rbde_108,sample
+rbd-edna-plate02,1,D,3,G,3,1,power,565.244,4.922022379851921,4.922022379851921,within_lod,rbde_116,sample
+rbd-edna-plate02,1,D,4,G,4,1,power,73.287,0.5528480729673576,0.5528480729673576,within_lod,rbde_124,field control
+rbd-edna-plate02,1,D,5,G,5,1,power,38.646,0.27871389860439827,0.27871389860439827,below_lod,rbde_132,extraction control
+rbd-edna-plate02,1,D,6,G,6,1,power,300.147,2.4999368861193294,2.4999368861193294,within_lod,rbde_140,sample
+rbd-edna-plate02,1,D,7,G,7,1,power,521.258,4.513242218875487,4.513242218875487,within_lod,rbde_148,sample
+rbd-edna-plate02,1,D,8,G,8,1,power,279.15,2.313236128946595,2.313236128946595,within_lod,rbde_156,sample
+rbd-edna-plate02,1,D,9,G,9,1,power,3063.842,30.04287943720141,30.04287943720141,within_lod,rbde_164,sample
+rbd-edna-plate02,1,D,10,G,10,1,power,75.903,0.5739947036579638,0.5739947036579638,within_lod,rbde_172,field control
+rbd-edna-plate02,1,D,11,G,11,1,power,45.708,0.3335545320382345,0.3335545320382345,below_lod,rbde_180,field control
+rbd-edna-plate02,1,D,12,G,12,1,power,23.473,0.1634596088360842,0.1634596088360842,below_lod,rbde_188,filter control
+rbd-edna-plate02,1,E,1,I,1,1,power,51.475,0.37878808428793803,0.37878808428793803,below_lod,rbde_101,filter control
+rbd-edna-plate02,1,E,2,I,2,1,power,375.425,3.176479250631252,3.176479250631252,within_lod,rbde_109,sample
+rbd-edna-plate02,1,E,3,I,3,1,power,40.672,0.29438018926726306,0.29438018926726306,below_lod,rbde_117,field control
+rbd-edna-plate02,1,E,4,I,4,1,power,907.096,8.165672916022519,8.165672916022519,within_lod,rbde_125,sample
+rbd-edna-plate02,1,E,5,I,5,1,power,384.815,3.261583882793583,3.261583882793583,within_lod,rbde_133,sample
+rbd-edna-plate02,1,E,6,I,6,1,power,295.192,2.455792875602623,2.455792875602623,within_lod,rbde_141,sample
+rbd-edna-plate02,1,E,7,I,7,1,power,681.177,6.009796254321844,6.009796254321844,within_lod,rbde_149,sample
+rbd-edna-plate02,1,E,8,I,8,1,power,76.743,0.5807958598748766,0.5807958598748766,within_lod,rbde_157,field control
+rbd-edna-plate02,1,E,9,I,9,1,power,1606.927,15.058496682758614,15.058496682758614,within_lod,rbde_165,sample
+rbd-edna-plate02,1,E,10,I,10,1,power,25.751,0.18049363965600634,0.18049363965600634,below_lod,rbde_173,field control
+rbd-edna-plate02,1,E,11,I,11,1,power,299.978,2.4984304197008824,2.4984304197008824,within_lod,rbde_181,sample
+rbd-edna-plate02,1,E,12,I,12,1,power,833.794,7.461508442098271,7.461508442098271,within_lod,rbde_189,sample
+rbd-edna-plate02,1,F,1,K,1,1,power,1220.324,11.216670388783728,11.216670388783728,within_lod,rbde_102,sample
+rbd-edna-plate02,1,F,2,K,2,1,power,1276.333,11.768522615095831,11.768522615095831,within_lod,rbde_110,sample
+rbd-edna-plate02,1,F,3,K,3,1,power,805.566,7.191478454277185,7.191478454277185,within_lod,rbde_118,sample
+rbd-edna-plate02,1,F,4,K,4,1,power,22.536,0.1564861109730294,0.1564861109730294,below_lod,rbde_126,field control
+rbd-edna-plate02,1,F,5,K,5,1,power,3038.438,29.776355166433166,29.776355166433166,within_lod,rbde_134,sample
+rbd-edna-plate02,1,F,6,K,6,1,power,806.54,7.200784833681769,7.200784833681769,within_lod,rbde_142,sample
+rbd-edna-plate02,1,F,7,K,7,1,power,790.257,7.045308385351052,7.045308385351052,within_lod,rbde_150,sample
+rbd-edna-plate02,1,F,8,K,8,1,power,604.373,5.287554509006135,5.287554509006135,within_lod,rbde_158,sample
+rbd-edna-plate02,1,F,9,K,9,1,power,357.367,3.013236775579247,3.013236775579247,within_lod,rbde_166,sample
+rbd-edna-plate02,1,F,10,K,10,1,power,2337.041,22.4843226855969,22.4843226855969,within_lod,rbde_174,sample
+rbd-edna-plate02,1,F,11,K,11,1,power,1890.936,17.92370566937051,17.92370566937051,within_lod,rbde_182,sample
+rbd-edna-plate02,1,F,12,K,12,1,power,1594.514,14.934036513174165,14.934036513174165,within_lod,rbde_190,sample
+rbd-edna-plate02,1,G,1,M,1,1,power,303.662,2.531283067464819,2.531283067464819,within_lod,rbde_103,sample
+rbd-edna-plate02,1,G,2,M,2,1,power,537.515,4.664053423973628,4.664053423973628,within_lod,rbde_111,sample
+rbd-edna-plate02,1,G,3,M,3,1,power,2560.23,24.789933003613164,24.789933003613164,within_lod,rbde_119,sample
+rbd-edna-plate02,1,G,4,M,4,1,power,546.33,4.7459621919279185,4.7459621919279185,within_lod,rbde_127,sample
+rbd-edna-plate02,1,G,5,M,5,1,power,297.367,2.4751635547636335,2.4751635547636335,within_lod,rbde_135,sample
+rbd-edna-plate02,1,G,6,M,6,1,power,274.423,2.271338015145857,2.271338015145857,within_lod,rbde_143,sample
+rbd-edna-plate02,1,G,7,M,7,1,power,1317.815,12.178343938650192,12.178343938650192,within_lod,rbde_151,sample
+rbd-edna-plate02,1,G,8,M,8,1,power,702.082,6.2074020996115316,6.2074020996115316,within_lod,rbde_159,sample
+rbd-edna-plate02,1,G,9,M,9,1,power,2346.85,22.585338287822513,22.585338287822513,within_lod,rbde_167,sample
+rbd-edna-plate02,1,G,10,M,10,1,power,1135.425,10.383581528208142,10.383581528208142,within_lod,rbde_175,sample
+rbd-edna-plate02,1,G,11,M,11,1,power,2300.555,22.10884282828105,22.10884282828105,within_lod,rbde_183,sample
+rbd-edna-plate02,1,G,12,M,12,1,power,109.582,0.8503389559860032,0.8503389559860032,within_lod,rbde_191,sample
+rbd-edna-plate02,1,H,1,O,1,1,power,490.888,4.232401074843213,4.232401074843213,within_lod,rbde_104,sample
+rbd-edna-plate02,1,H,2,O,2,1,power,2618.281,25.39198740764665,25.39198740764665,within_lod,rbde_112,sample
+rbd-edna-plate02,1,H,3,O,3,1,power,6135.494,63.17012501674344,63.17012501674344,within_lod,rbde_120,sample
+rbd-edna-plate02,1,H,4,O,4,1,power,532.945,4.621626126538198,4.621626126538198,within_lod,rbde_128,sample
+rbd-edna-plate02,1,H,5,O,5,1,power,20.433,0.14091013192891022,0.14091013192891022,below_lod,rbde_136,filter control
+rbd-edna-plate02,1,H,6,O,6,1,power,2783.298,27.108463011928308,27.108463011928308,within_lod,rbde_144,sample
+rbd-edna-plate02,1,H,7,O,7,1,power,67.721,0.5080334423245088,0.5080334423245088,below_lod,rbde_152,field control
+rbd-edna-plate02,1,H,8,O,8,1,power,532.335,4.615964892762221,4.615964892762221,within_lod,rbde_160,sample
+rbd-edna-plate02,1,H,9,O,9,1,power,778.821,6.93624718033004,6.93624718033004,within_lod,rbde_168,sample
+rbd-edna-plate02,1,H,10,O,10,1,power,380.121,3.2190221679458344,3.2190221679458344,within_lod,rbde_176,sample
+rbd-edna-plate02,1,H,11,O,11,1,power,317.478,2.6547364110220615,2.6547364110220615,within_lod,rbde_184,sample
+rbd-edna-plate02,1,H,12,O,12,1,power,1054.282,9.591427871809667,9.591427871809667,within_lod,rbde_192,sample
+rbd-edna-plate02,2,A,1,B,1,1,power,416.373,3.548656043148606,3.548656043148606,within_lod,rbde_97,sample
+rbd-edna-plate02,2,A,2,B,2,1,power,163.559,1.3054093127704638,1.3054093127704638,within_lod,rbde_105,sample
+rbd-edna-plate02,2,A,3,B,3,1,power,250.969,2.0642177589752375,2.0642177589752375,within_lod,rbde_113,sample
+rbd-edna-plate02,2,A,4,B,4,1,power,585.342,5.1095576586774225,5.1095576586774225,within_lod,rbde_121,sample
+rbd-edna-plate02,2,A,5,B,5,1,power,319.15,2.669702576777671,2.669702576777671,within_lod,rbde_129,sample
+rbd-edna-plate02,2,A,6,B,6,1,power,2725.384,26.505215634067042,26.505215634067042,within_lod,rbde_137,sample
+rbd-edna-plate02,2,A,7,B,7,1,power,17.949,0.1226579470720813,0.1226579470720813,below_lod,rbde_145,filter control
+rbd-edna-plate02,2,A,8,B,8,1,power,2324.614,22.356389026778864,22.356389026778864,within_lod,rbde_153,sample
+rbd-edna-plate02,2,A,9,B,9,1,power,215.632,1.754763167472205,1.754763167472205,within_lod,rbde_161,sample
+rbd-edna-plate02,2,A,10,B,10,1,power,733.579,6.505907420656172,6.505907420656172,within_lod,rbde_169,sample
+rbd-edna-plate02,2,A,11,B,11,1,power,71.661,0.5397307638747365,0.5397307638747365,below_lod,rbde_177,sample
+rbd-edna-plate02,2,A,12,B,12,1,power,417.221,3.556391652896428,3.556391652896428,within_lod,rbde_185,sample
+rbd-edna-plate02,2,B,1,D,1,1,power,1130.596,10.33632440690314,10.33632440690314,within_lod,rbde_98,sample
+rbd-edna-plate02,2,B,2,D,2,1,power,328.524,2.753711053003485,2.753711053003485,within_lod,rbde_106,sample
+rbd-edna-plate02,2,B,3,D,3,1,power,22.624,0.15714018579676794,0.15714018579676794,below_lod,rbde_114,extraction control
+rbd-edna-plate02,2,B,4,D,4,1,power,956.751,8.644974114838963,8.644974114838963,within_lod,rbde_122,sample
+rbd-edna-plate02,2,B,5,D,5,1,power,2854.285,27.849084284030628,27.849084284030628,within_lod,rbde_130,sample
+rbd-edna-plate02,2,B,6,D,6,1,power,498.44,4.3021257023774435,4.3021257023774435,within_lod,rbde_138,sample
+rbd-edna-plate02,2,B,7,D,7,1,power,376.793,3.188868664369347,3.188868664369347,within_lod,rbde_146,sample
+rbd-edna-plate02,2,B,8,D,8,1,power,18.146,0.12409931481721508,0.12409931481721508,below_lod,rbde_154,extraction control
+rbd-edna-plate02,2,B,9,D,9,1,power,125.558,0.9836702473922413,0.9836702473922413,within_lod,rbde_162,sample
+rbd-edna-plate02,2,B,10,D,10,1,power,324.774,2.7200835941649735,2.7200835941649735,within_lod,rbde_170,sample
+rbd-edna-plate02,2,B,11,D,11,1,power,439.185,3.757130187724453,3.757130187724453,within_lod,rbde_178,sample
+rbd-edna-plate02,2,B,12,D,12,1,power,17.364,0.11838433587038179,0.11838433587038179,below_lod,rbde_186,extraction control
+rbd-edna-plate02,2,C,1,F,1,1,power,171.816,1.376063605650703,1.376063605650703,within_lod,rbde_99,sample
+rbd-edna-plate02,2,C,2,F,2,1,power,1137.47,10.403598381249969,10.403598381249969,within_lod,rbde_107,sample
+rbd-edna-plate02,2,C,3,F,3,1,power,548.452,4.76569369120178,4.76569369120178,within_lod,rbde_115,sample
+rbd-edna-plate02,2,C,4,F,4,1,power,72.471,0.54626263231783,0.54626263231783,within_lod,rbde_123,field control
+rbd-edna-plate02,2,C,5,F,5,1,power,1821.272,17.2179136179352,17.2179136179352,within_lod,rbde_131,sample
+rbd-edna-plate02,2,C,6,F,6,1,power,318.35,2.662541042881022,2.662541042881022,within_lod,rbde_139,sample
+rbd-edna-plate02,2,C,7,F,7,1,power,326.247,2.733289224448898,2.733289224448898,within_lod,rbde_147,sample
+rbd-edna-plate02,2,C,8,F,8,1,power,487.467,4.2008410583412275,4.2008410583412275,within_lod,rbde_155,sample
+rbd-edna-plate02,2,C,9,F,9,1,power,1831.86,17.325064183604717,17.325064183604717,within_lod,rbde_163,sample
+rbd-edna-plate02,2,C,10,F,10,1,power,394.643,3.35081460402769,3.35081460402769,within_lod,rbde_171,sample
+rbd-edna-plate02,2,C,11,F,11,1,power,305.3,2.5458992046626445,2.5458992046626445,within_lod,rbde_179,sample
+rbd-edna-plate02,2,C,12,F,12,1,power,32.001,0.2277514002122449,0.2277514002122449,below_lod,rbde_187,field control
+rbd-edna-plate02,2,D,1,H,1,1,power,547.121,4.7533167077909715,4.7533167077909715,within_lod,rbde_100,sample
+rbd-edna-plate02,2,D,2,H,2,1,power,3608.404,35.79164915440285,35.79164915440285,within_lod,rbde_108,sample
+rbd-edna-plate02,2,D,3,H,3,1,power,506.5,4.376622386223804,4.376622386223804,within_lod,rbde_116,sample
+rbd-edna-plate02,2,D,4,H,4,1,power,72.095,0.5432299137866093,0.5432299137866093,below_lod,rbde_124,field control
+rbd-edna-plate02,2,D,5,H,5,1,power,32.049,0.2281170353440195,0.2281170353440195,below_lod,rbde_132,extraction control
+rbd-edna-plate02,2,D,6,H,6,1,power,290.956,2.418095643849045,2.418095643849045,within_lod,rbde_140,sample
+rbd-edna-plate02,2,D,7,H,7,1,power,604.37,5.287526418647361,5.287526418647361,within_lod,rbde_148,sample
+rbd-edna-plate02,2,D,8,H,8,1,power,278.239,2.3051575090074277,2.3051575090074277,within_lod,rbde_156,sample
+rbd-edna-plate02,2,D,9,H,9,1,power,3096.577,30.38654519513538,30.38654519513538,within_lod,rbde_164,sample
+rbd-edna-plate02,2,D,10,H,10,1,power,81.328,0.6180096988778722,0.6180096988778722,within_lod,rbde_172,field control
+rbd-edna-plate02,2,D,11,H,11,1,power,46.037,0.33612472882106675,0.33612472882106675,below_lod,rbde_180,field control
+rbd-edna-plate02,2,D,12,H,12,1,power,23.719,0.16529370709107175,0.16529370709107175,below_lod,rbde_188,filter control
+rbd-edna-plate02,2,E,1,J,1,1,power,44.317,0.3227022989284522,0.3227022989284522,below_lod,rbde_101,filter control
+rbd-edna-plate02,2,E,2,J,2,1,power,362.23,3.0571419854506208,3.0571419854506208,within_lod,rbde_109,sample
+rbd-edna-plate02,2,E,3,J,3,1,power,25.397,0.17783935983278296,0.17783935983278296,below_lod,rbde_117,field control
+rbd-edna-plate02,2,E,4,J,4,1,power,882.606,7.929951921997837,7.929951921997837,within_lod,rbde_125,sample
+rbd-edna-plate02,2,E,5,J,5,1,power,367.174,3.101820965428691,3.101820965428691,within_lod,rbde_133,sample
+rbd-edna-plate02,2,E,6,J,6,1,power,244.892,2.0107688782788298,2.0107688782788298,within_lod,rbde_141,sample
+rbd-edna-plate02,2,E,7,J,7,1,power,821.425,7.343105811675905,7.343105811675905,within_lod,rbde_149,sample
+rbd-edna-plate02,2,E,8,J,8,1,power,64.283,0.48048015328648724,0.48048015328648724,below_lod,rbde_157,field control
+rbd-edna-plate02,2,E,9,J,9,1,power,1501.613,14.004750728458244,14.004750728458244,within_lod,rbde_165,sample
+rbd-edna-plate02,2,E,10,J,10,1,power,27.448,0.1932527458116445,0.1932527458116445,below_lod,rbde_173,field control
+rbd-edna-plate02,2,E,11,J,11,1,power,287.076,2.383600349160544,2.383600349160544,within_lod,rbde_181,sample
+rbd-edna-plate02,2,E,12,J,12,1,power,871.049,7.818872277798678,7.818872277798678,within_lod,rbde_189,sample
+rbd-edna-plate02,2,F,1,L,1,1,power,1151.767,10.543610558084255,10.543610558084255,within_lod,rbde_102,sample
+rbd-edna-plate02,2,F,2,L,2,1,power,1331.885,12.31755588297706,12.31755588297706,within_lod,rbde_110,sample
+rbd-edna-plate02,2,F,3,L,3,1,power,713.76,6.317970032122394,6.317970032122394,within_lod,rbde_118,sample
+rbd-edna-plate02,2,F,4,L,4,1,power,17.997,0.12300904133721935,0.12300904133721935,below_lod,rbde_126,field control
+rbd-edna-plate02,2,F,5,L,5,1,power,3124.363,30.678454718204605,30.678454718204605,within_lod,rbde_134,sample
+rbd-edna-plate02,2,F,6,L,6,1,power,832.099,7.445275664333959,7.445275664333959,within_lod,rbde_142,sample
+rbd-edna-plate02,2,F,7,L,7,1,power,736.24,6.531168240310183,6.531168240310183,within_lod,rbde_150,sample
+rbd-edna-plate02,2,F,8,L,8,1,power,617.893,5.414247208022319,5.414247208022319,within_lod,rbde_158,sample
+rbd-edna-plate02,2,F,9,L,9,1,power,356.473,3.0051699170360036,3.0051699170360036,within_lod,rbde_166,sample
+rbd-edna-plate02,2,F,10,L,10,1,power,2461.146,23.764545113863154,23.764545113863154,within_lod,rbde_174,sample
+rbd-edna-plate02,2,F,11,L,11,1,power,1824.227,17.24781382811222,17.24781382811222,within_lod,rbde_182,sample
+rbd-edna-plate02,2,F,12,L,12,1,power,1666.26,15.654329832407905,15.654329832407905,within_lod,rbde_190,sample
+rbd-edna-plate02,2,G,1,N,1,1,power,271.698,2.2472077499573517,2.2472077499573517,within_lod,rbde_103,sample
+rbd-edna-plate02,2,G,2,N,2,1,power,507.255,4.383604961266369,4.383604961266369,within_lod,rbde_111,sample
+rbd-edna-plate02,2,G,3,N,3,1,power,2708.993,26.33464531369537,26.33464531369537,within_lod,rbde_119,sample
+rbd-edna-plate02,2,G,4,N,4,1,power,488.818,4.213302690371717,4.213302690371717,within_lod,rbde_127,sample
+rbd-edna-plate02,2,G,5,N,5,1,power,243.913,2.0021669565367364,2.0021669565367364,within_lod,rbde_135,sample
+rbd-edna-plate02,2,G,6,N,6,1,power,257.411,2.120976242163171,2.120976242163171,within_lod,rbde_143,sample
+rbd-edna-plate02,2,G,7,N,7,1,power,1337.977,12.377863710534722,12.377863710534722,within_lod,rbde_151,sample
+rbd-edna-plate02,2,G,8,N,8,1,power,667.457,5.880337662752638,5.880337662752638,within_lod,rbde_159,sample
+rbd-edna-plate02,2,G,9,N,9,1,power,2436.315,23.508026893463384,23.508026893463384,within_lod,rbde_167,sample
+rbd-edna-plate02,2,G,10,N,10,1,power,1090.828,9.947694820938542,9.947694820938542,within_lod,rbde_175,sample
+rbd-edna-plate02,2,G,11,N,11,1,power,2131.231,20.371892782352568,20.371892782352568,within_lod,rbde_183,sample
+rbd-edna-plate02,2,G,12,N,12,1,power,105.569,0.8170543948831303,0.8170543948831303,within_lod,rbde_191,sample
+rbd-edna-plate02,2,H,1,P,1,1,power,482.352,4.153682301760466,4.153682301760466,within_lod,rbde_104,sample
+rbd-edna-plate02,2,H,2,P,2,1,power,2516.601,24.338080693920542,24.338080693920542,within_lod,rbde_112,sample
+rbd-edna-plate02,2,H,3,P,3,1,power,5972.534,61.376131913098206,61.376131913098206,within_lod,rbde_120,sample
+rbd-edna-plate02,2,H,4,P,4,1,power,453.151,3.8851411681442873,3.8851411681442873,within_lod,rbde_128,sample
+rbd-edna-plate02,2,H,5,P,5,1,power,27.677,0.19497883679009065,0.19497883679009065,below_lod,rbde_136,filter control
+rbd-edna-plate02,2,H,6,P,6,1,power,2580.142,24.996335955079378,24.996335955079378,within_lod,rbde_144,sample
+rbd-edna-plate02,2,H,7,P,7,1,power,64.973,0.48600191784164787,0.48600191784164787,below_lod,rbde_152,field control
+rbd-edna-plate02,2,H,8,P,8,1,power,601.354,5.259291207487573,5.259291207487573,within_lod,rbde_160,sample
+rbd-edna-plate02,2,H,9,P,9,1,power,664.072,5.848426218898134,5.848426218898134,within_lod,rbde_168,sample
+rbd-edna-plate02,2,H,10,P,10,1,power,430.767,3.6801090876852522,3.6801090876852522,within_lod,rbde_176,sample
+rbd-edna-plate02,2,H,11,P,11,1,power,322.598,2.7005831835420135,2.7005831835420135,within_lod,rbde_184,sample
+rbd-edna-plate02,2,H,12,P,12,1,power,1160.41,10.628311792247247,10.628311792247247,within_lod,rbde_192,sample
