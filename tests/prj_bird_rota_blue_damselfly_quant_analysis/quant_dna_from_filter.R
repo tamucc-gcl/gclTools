@@ -55,23 +55,16 @@ basename <- path_quant_raw_data %>%
 
 path_quant_report <-
   paste0(
-    "../data/processed/",
+    "./",
     basename,
     "_quant_report.csv"
   )
 
 path_quant_model_comparison <-
   paste0(
-    "../results/",
+    "./",
     basename,
     "_quant_model_comparison.jpg"
-  )
-
-path_quant_spread_assessment <-
-  paste0(
-    "../results/",
-    basename,
-    "_quant_mean_and_spread.jpg"
   )
 
 
