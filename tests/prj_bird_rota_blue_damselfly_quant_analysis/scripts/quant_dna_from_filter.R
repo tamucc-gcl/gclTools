@@ -30,19 +30,19 @@ source ("helper_functions.R")
 # Assign input file paths
 path_quant_plate_map <-
   paste0(
-    "./",
+    "../data_processed/",
     "rbd_edna-plate01_AccuClear_2024-05-14_plate-map_formatted.csv"
   )
 
 path_quant_raw_data <-
   paste0(
-    "./",
+    "../data_raw/",
     "rbd_edna-plate01_AccuClear_2024-05-14_raw-data.csv"
   )
 
 path_dna_plate_map <-
   paste0(
-    "./",
+    "../data_raw/",
     "rbd_edna-extraction_plate-map.xlsx"
   )
 
@@ -55,14 +55,14 @@ basename <- path_quant_raw_data %>%
 
 path_quant_report <-
   paste0(
-    "./",
+    "../data_processed/",
     basename,
     "_quant_report.csv"
   )
 
 path_quant_model_comparison <-
   paste0(
-    "./",
+    "../results/",
     basename,
     "_quant_model_comparison.jpg"
   )

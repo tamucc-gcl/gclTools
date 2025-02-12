@@ -19,25 +19,26 @@ pacman::p_load(
 
 #### USER DEFINED ####
 # Set infiles
-quant_files_to_summarize <- 
+quant_files_to_summarize <-
   list.files(
-    "./",
-    pattern = "_quant_report_replicates.csv"
-  ) %>% 
+    "../data_processed/",
+    pattern = "_quant_report_replicates.csv",
+    full.names = T
+  ) %>%
   map_df (~.x %>% read_csv)
 
 
 # Assign output file paths
-path_quant_report_summarized <- 
+path_quant_report_summarized <-
   paste0(
-    "./",
+    "../data/processed/",
     "rbd_edna_quant_report_merged_summarized.csv"
   )
 
 
-path_quant_plot <- 
+path_quant_plot <-
   paste0(
-    "./",
+    "../results/",
     "rbd_quant_sample_assessment.png"
   )
 
@@ -55,30 +56,30 @@ quant_files_summarized <-
   summarize(
     # Number of replicates
     n_reps = n(),
-    
+
     # Means (na.rm = TRUE ensures that NA values won't break the calculation)
     sample_volume_mean = mean(sample_volume, na.rm = TRUE),
     rfu_mean           = mean(rfu, na.rm = TRUE),
     dna_per_well_mean  = mean(dna_per_well, na.rm = TRUE),
     ng_per_ul_mean     = mean(ng_per_ul, na.rm = TRUE),
-    
+
     # Standard deviation of ng_per_ul
     ng_per_ul_sd = sd(ng_per_ul, na.rm = TRUE),
-    
+
     # CV of ng_per_ul (SD / Mean * 100)
     ng_per_ul_cv = (sd(ng_per_ul, na.rm = TRUE) / mean(ng_per_ul, na.rm = TRUE)) * 100,
-    
+
     # 95% CI for ng_per_ul (using a t-based approach, suitable for small sample sizes)
     ng_per_ul_ci_95 = qt(0.975, df = n() - 1) * (sd(ng_per_ul, na.rm = TRUE) / sqrt(n())),
-    
+
     # % of replicates that are "within_lod"
     pct_reps_within_lod = (sum(quant_status == "within_lod", na.rm = TRUE) / n()) * 100,
-    
+
     pct_reps_outside_lod = 100 - pct_reps_within_lod
   ) %>%
-  ungroup() %>% 
+  ungroup() %>%
   mutate (
-    sample_well_id = 
+    sample_well_id =
       as.factor(
         sprintf("%s%02d",
                 plate_row,
@@ -90,8 +91,8 @@ quant_files_summarized <-
 
 #### Visualize quant results ####
 
-(quant_plot <- 
-   quant_files_summarized  %>% 
+(quant_plot <-
+   quant_files_summarized  %>%
    ggplot (
      aes (
        x = fct_reorder (
@@ -157,7 +158,7 @@ quant_files_summarized %>%
     -contains("per_well"),
     -contains("_sd")
   ) %>%
-  arrange (plate_id, plate_row, plate_column) %>% 
+  arrange (plate_id, plate_row, plate_column) %>%
   write_csv(
     file = path_quant_report_summarized
   )
