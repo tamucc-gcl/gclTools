@@ -20,6 +20,7 @@ pacman::p_load(
   readxl,
   cowplot,
   ggpubr,
+  outliers,
   tidyverse
 )
 
@@ -202,6 +203,124 @@ fit_polynomial <-
     model_type = "Polynomial",
     degree = 2
   )
+
+#### Jacknife Fit & Identify Standards to Remove #### - JDS
+jacknife_standards <- mutate(standard_stats,
+              sample_id = row_number()) %>%
+  filter(include_in_model) %>%
+  
+  expand_grid(tibble(model = c('Linear', 'Power', 'Polynomial'),
+                     full_model = list(fit_linear$fit, fit_power$fit, fit_polynomial$fit))) %>%
+  nest(removed_standard = -c(sample_id, model, full_model)) %>%
+  rowwise %>%
+  
+  #Make dataset with one standard removed
+  mutate(other_standards = list(anti_join(standard_stats,
+                                          removed_standard,
+                                          by = colnames(removed_standard)))) %>%
+
+  #Fit model without standard
+  mutate(jacknife_model = list(fit_and_plot(x_var = "rfu_mean",
+                                            y_var = "dna_per_well",
+                                            data = other_standards,
+                                            model_type = model,
+                                            degree = 2) %>%
+                                 pluck('fit'))) %>%
+  
+  
+  #Calculate predicted values with/without point
+  mutate(observed_standard = removed_standard[["dna_per_well"]],
+         
+         across(c(full_model, jacknife_model),
+                list(prediction = ~predict(., newdata = removed_standard)),
+                .names = "{stringr::str_replace(.col, 'model', .fn)}")) %>%
+  ungroup %>%
+  
+  #Calculate relative difference between the standard's known value and the predicted DNA
+  mutate(across(ends_with('prediction'),
+                ~sqrt((. - observed_standard)^2) / observed_standard,
+                .names = "{stringr::str_replace(.col, 'prediction', 'relDiff')}"),
+         .keep = 'unused') %>%
+  
+  #Smaller is better - larger differences mean relative to the y-value the predicted value without that point was much different than it was with that point
+  mutate(rel_improvement = sqrt((full_relDiff - jacknife_relDiff)^2),
+         .keep = 'unused') %>%
+  select(sample_id, model, rel_improvement)
+
+
+#### Identify Outlier Standards #### - JDS
+# x <- filter(jacknife_standards, model == 'Power') %>% pull(rel_improvement) %>% unname
+identify_outliers <- function(x, test = dixon.test, alpha = 0.05, ...){
+  # Returns a logical vector indicating which values are outliers found by the specified test (either dixon.test or grubbs.test) at the specified alpha. 
+  # Specifically testing for outliers above the average
+  
+  p <- 1/Inf
+  outlier_standards <- logical(length(x))
+  
+  while(p < alpha){
+    test_out <- test(x[!outlier_standards], two.sided = FALSE, )
+    
+    p <- test_out$p.value
+    if(p < alpha){
+      outlier_standards[!outlier_standards][which.max(x[!outlier_standards])] <- TRUE
+    }
+    
+  }
+  
+  outlier_standards
+}
+
+# jacknife_standards %>%
+#   mutate(is_outlier = identify_outliers(rel_improvement),
+#          .by = 'model') %>%
+#   ggplot(aes(x = sample_id, y = rel_improvement, colour = is_outlier)) +
+#   geom_point() +
+#   facet_wrap(~model, scales = 'free_y')
+
+
+#### Refit models excluding poorly fit Samples #### - JDS
+standards_without_outliers <- jacknife_standards %>%
+  mutate(is_outlier = identify_outliers(rel_improvement),
+         .by = 'model', .keep = 'unused') %>%
+  filter(is_outlier) %>%
+  select(-is_outlier) %>%
+  summarise(outlier_standards = list(c(sample_id)),
+            .by = model) %>%
+  rowwise %>%
+  mutate(new_standards = list(mutate(standard_stats, 
+                                     sample_id = row_number(),
+                                     include_in_model = !sample_id %in% outlier_standards & include_in_model)),
+         .keep = 'unused') %>%
+  ungroup
+
+fit_linear <-
+  fit_and_plot(
+    x_var = "rfu_mean",
+    y_var = "dna_per_well",
+    data = standards_without_outliers$new_standards[[which(standards_without_outliers$model == 'Linear')]],
+    model_type = "Linear",
+    degree = NULL
+  )
+
+fit_power <-
+  fit_and_plot(
+    x_var = "rfu_mean",
+    y_var = "dna_per_well",
+    data = standards_without_outliers$new_standards[[which(standards_without_outliers$model == 'Power')]],
+    model_type = "Power",
+    degree = NULL
+  )
+
+fit_polynomial <-
+  fit_and_plot(
+    x_var = "rfu_mean",
+    y_var = "dna_per_well",
+    data = standards_without_outliers$new_standards[[which(standards_without_outliers$model == 'Polynomial')]],
+    model_type = "Polynomial",
+    degree = 2
+  )
+
+
 
 ## Output plots
 (plot_model_comparison <-
