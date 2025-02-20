@@ -138,6 +138,25 @@ quant_files_summarized <-
    theme (axis.text.x = element_text (size = 7))
 )
 
+#### Identify Outliers #### - JDS addition SFM request
+prediction_interval <- lm(log(ng_per_ul_mean) ~ sample_type, quant_files_summarized) %>%
+  predict(newdata = data.frame(sample_type = unique(quant_files_summarized$sample_type)), 
+          interval = 'prediction', level = 0.95) %>%
+  as_tibble() %>%
+  mutate(sample_type = unique(quant_files_summarized$sample_type)) %>%
+  mutate(across(where(is.numeric), exp)) %>%
+  select(sample_type, lwr_limit = lwr, upr_limit = upr)
+
+
+outlier_flags <- quant_files_summarized %>%
+  select(plate_id:dna_extract_tube_id, ng_per_ul_mean) %>%
+  left_join(prediction_interval,
+            by = 'sample_type') %>%
+  mutate(outlier_sample = case_when(ng_per_ul_mean < lwr_limit ~ str_c('too little DNA (< ', scales::comma(lwr_limit, 0.01), ')'),
+                                    ng_per_ul_mean > upr_limit ~ str_c('too much DNA (>', scales::comma(upr_limit, 0.01), ')'),
+                                     TRUE ~ '')) %>%
+  select(-ng_per_ul_mean, -lwr_limit, -upr_limit)
+
 
 #### OUTPUT RESULTS ####
 ggsave(
@@ -152,13 +171,16 @@ ggsave(
 # Export data frame
 quant_files_summarized %>%
   select(
-    -sample_well_id
+    -sample_well_id,
     -contains("_cv"),
     -contains("_rfu"),
     -contains("per_well"),
     -contains("_sd")
   ) %>%
   arrange (plate_id, plate_row, plate_column) %>%
+  left_join(outlier_flags, 
+            by = c('plate_id', 'plate_column', 'plate_row',
+                   'sample_type', 'dna_extract_tube_id')) %>%
   write_csv(
     file = path_quant_report_summarized
   )
