@@ -204,14 +204,25 @@ fit_polynomial <-
     degree = 2
   )
 
+fit_polynomial3 <-
+  fit_and_plot(
+    x_var = "rfu_mean",
+    y_var = "dna_per_well",
+    data = standard_stats,
+    model_type = "Polynomial",
+    degree = 3
+  )
+
+
 #### Jacknife Fit & Identify Standards to Remove #### - JDS
 jacknife_standards <- mutate(standard_stats,
               sample_id = row_number()) %>%
   filter(include_in_model) %>%
 
-  expand_grid(tibble(model = c('Linear', 'Power', 'Polynomial'),
-                     full_model = list(fit_linear$fit, fit_power$fit, fit_polynomial$fit))) %>%
-  nest(removed_standard = -c(sample_id, model, full_model)) %>%
+  expand_grid(tibble(model = c('Linear', 'Power', 'Polynomial', 'Polynomial'),
+                     degree = c(NA_integer_, NA_integer_, 2, 3),
+                     full_model = list(fit_linear$fit, fit_power$fit, fit_polynomial$fit, fit_polynomial3$fit))) %>%
+  nest(removed_standard = -c(sample_id, model, degree, full_model)) %>%
   rowwise %>%
 
   #Make dataset with one standard removed
@@ -224,7 +235,7 @@ jacknife_standards <- mutate(standard_stats,
                                             y_var = "dna_per_well",
                                             data = other_standards,
                                             model_type = model,
-                                            degree = 2) %>%
+                                            degree = degree) %>%
                                  pluck('fit'))) %>%
 
 
@@ -245,7 +256,7 @@ jacknife_standards <- mutate(standard_stats,
   #Smaller is better - larger differences mean relative to the y-value the predicted value without that point was much different than it was with that point
   mutate(rel_improvement = sqrt((full_relDiff - jacknife_relDiff)^2),
          .keep = 'unused') %>%
-  select(sample_id, model, rel_improvement)
+  select(sample_id, model, degree, rel_improvement)
 
 # Plot outlier standards
 jacknife_standards %>%
@@ -253,29 +264,32 @@ jacknife_standards %>%
          .by = 'model') %>%
   ggplot(aes(x = sample_id, y = rel_improvement, colour = is_outlier)) +
   geom_point() +
-  facet_wrap(~model, scales = 'free_y')
+  facet_wrap(~model + degree, scales = 'free_y')
+
+#If all models identify outlier then exclude
 
 
 #### Refit models excluding poorly fit Samples #### - JDS
 standards_without_outliers <- jacknife_standards %>%
   mutate(is_outlier = identify_outliers(rel_improvement),
-         .by = 'model', .keep = 'unused') %>%
-  filter(is_outlier) %>%
+         .by = c('model', 'degree'), .keep = 'unused') %>%
+  filter(all(is_outlier),
+         .by = 'sample_id') %>%
   select(-is_outlier) %>%
-  summarise(outlier_standards = list(c(sample_id)),
-            .by = model) %>%
+  summarise(outlier_standards = list(c(sample_id) %>% unique)) %>%
   rowwise %>%
   mutate(new_standards = list(mutate(standard_stats,
                                      sample_id = row_number(),
                                      include_in_model = !sample_id %in% outlier_standards & include_in_model)),
          .keep = 'unused') %>%
-  ungroup
+  ungroup %>%
+  unnest(new_standards)
 
 fit_linear <-
   fit_and_plot(
     x_var = "rfu_mean",
     y_var = "dna_per_well",
-    data = standards_without_outliers$new_standards[[which(standards_without_outliers$model == 'Linear')]],
+    data = standards_without_outliers,
     model_type = "Linear",
     degree = NULL
   )
@@ -284,7 +298,7 @@ fit_power <-
   fit_and_plot(
     x_var = "rfu_mean",
     y_var = "dna_per_well",
-    data = standards_without_outliers$new_standards[[which(standards_without_outliers$model == 'Power')]],
+    data = standards_without_outliers,
     model_type = "Power",
     degree = NULL
   )
@@ -293,11 +307,19 @@ fit_polynomial <-
   fit_and_plot(
     x_var = "rfu_mean",
     y_var = "dna_per_well",
-    data = standards_without_outliers$new_standards[[which(standards_without_outliers$model == 'Polynomial')]],
+    data = standards_without_outliers,
     model_type = "Polynomial",
     degree = 2
   )
 
+fit_polynomial3 <-
+  fit_and_plot(
+    x_var = "rfu_mean",
+    y_var = "dna_per_well",
+    data = standards_without_outliers,
+    model_type = "Polynomial",
+    degree = 3
+  )
 
 
 ## Output plots
@@ -306,7 +328,8 @@ fit_polynomial <-
       fit_linear$plot + guides(col = "none"),
       fit_power$plot + guides(col = "none"),
       fit_polynomial$plot + guides(col = "none"),
-      nrow = 3,
+      fit_polynomial3$plot + guides(col = "none"),
+      nrow = 4,
       labels = "AUTO"
     ))
 
@@ -362,13 +385,20 @@ predicted_sample_concentration_polynomial <-
     model_type =  "polynomial"
   )
 
+predicted_sample_concentration_polynomial3 <-
+  predict_sample_concentration(
+    data = quant_data_for_predictions,
+    model = fit_polynomial3$fit,
+    model_type =  "polynomial3"
+  )
 
 
 predicted_sample_concentration <-
   rbind (
     predicted_sample_concentration_linear,
     predicted_sample_concentration_power,
-    predicted_sample_concentration_polynomial
+    predicted_sample_concentration_polynomial,
+    predicted_sample_concentration_polynomial3
   ) %>%
   select (-wells) %>%
   rename (
@@ -441,6 +471,16 @@ predicted_sample_concentration <-
     )
 )
 
+(plot_polynomial3_with_samples <-
+    plot_regression_with_samples(
+      base_plot = fit_polynomial3$plot,
+      predicted_sample_concentration = predicted_sample_concentration,
+      model_type = "polynomial3",
+      min_rfu = min_rfu,
+      max_rfu = max_rfu
+    )
+)
+
 
 #### Merge Plots ####
 (plot_with_samples <-
@@ -448,7 +488,8 @@ predicted_sample_concentration <-
      plot_linear_with_samples,
      plot_power_with_samples,
      plot_polynomial_with_samples,
-     nrow = 3,
+     plot_polynomial3_with_samples,
+     nrow = 4,
      labels = "AUTO",
      common.legend = T,
      legend = "right"
@@ -460,7 +501,8 @@ model_rank_df <-
   rank_models(
     linear = fit_linear$fit,
     power = fit_power$fit,
-    polynomial = fit_polynomial$fit
+    polynomial = fit_polynomial$fit,
+    polynomial3 = fit_polynomial3$fit
   )
 print(model_rank_df)
 
