@@ -287,10 +287,11 @@ predict_sample_concentration <-
   function(
     data,
     model,
-    model_type
+    model_type,
+    x_var = 'rfu_mean'
   ) {
     data %>%
-      rename(rfu_mean = rfu) %>%
+      rename(!!sym(x_var) := rfu) %>%
       mutate(
         dna_per_well = if (model_type == "linear") predict(model, newdata = .) else 10^predict(model, newdata = .),
         pg_per_ul = if (quant_kit == "accublue-nextgen") dna_per_well / sample_volume else NA,
@@ -308,8 +309,8 @@ identify_outliers <- function(x, test = dixon.test, alpha = 0.05, ...){
   p <- 1/Inf
   outlier_standards <- logical(length(x))
 
-  while(p < alpha){
-    test_out <- test(x[!outlier_standards], two.sided = FALSE, )
+  while(p < alpha & sum(!outlier_standards) >= 3){
+    test_out <- test(x[!outlier_standards], two.sided = FALSE)
 
     p <- test_out$p.value
     if(p < alpha){

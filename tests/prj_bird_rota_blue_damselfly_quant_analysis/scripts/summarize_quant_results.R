@@ -32,7 +32,7 @@ quant_files_to_summarize <-
 # Assign output file paths
 path_quant_report_summarized <-
   paste0(
-    "../data/processed/",
+    "../data_processed/",
     "rbd_edna_quant_report_merged_summarized.csv"
   )
 
@@ -253,11 +253,10 @@ quant_files_summarized <- quant_files_summarized %>%
    facet_wrap (~plate_id,
                ncol = 5,
                scales =  "free_y") +
-   scale_x_continuous(transform = scales::log10_trans()) +
    theme_bw() +
    labs (
-     y = "DNA Concentration (ng/uL) \u00b1 95% CI",
-     x = "Sample Well ID",
+     x = "DNA Concentration (ng/uL) \u00b1 95% CI",
+     y = "Sample Well ID",
      color = "Sample Flag",
      shape = "Sample Type"
    ) +
@@ -270,6 +269,15 @@ quant_files_summarized <- quant_files_summarized %>%
 ggsave(
   quant_plot,
   file = path_quant_plot,
+  width = 12,
+  height = 10,
+  units = "in",
+  dpi = 330)
+
+ggsave(
+  quant_plot +
+    scale_x_continuous(transform = scales::log10_trans()),
+  file = str_replace(path_quant_plot, 'assessment.png', 'assessment_log.png'),
   width = 12,
   height = 10,
   units = "in",
@@ -305,6 +313,7 @@ quant_files_summarized %>%
     write_csv(
       file = path_quant_report_summarized, na = ''
     )
+
 
 
 
