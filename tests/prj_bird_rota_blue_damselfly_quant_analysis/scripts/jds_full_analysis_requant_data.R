@@ -370,7 +370,24 @@ dna_plate_map <-
   ) %>%
   clean_names() %>%
   mutate (wells = paste0(plate_row, plate_col)) %>%
-  mutate(across(where(is.character), str_to_lower))
+  mutate(across(where(is.character), str_to_lower)) %>%
+  mutate (transfer_plate_col = as.numeric(transfer_plate_col)) %>%
+  mutate (requant_plate_id =
+            case_when (
+              !is.na(transfer_plate) ~ transfer_plate,
+              T ~ zymo_plate_id
+              ),
+          requant_plate_row =
+            case_when (
+              !is.na(transfer_plate_row) ~ transfer_plate_row,
+              T ~ zymo_plate_row
+              ),
+          requant_plate_col =
+            case_when (
+              !is.na(transfer_plate_col) ~ transfer_plate_col,
+              T ~ zymo_plate_col
+            )
+  )
 
 all_quant_data <- tibble(data_plate = list.files('../data_raw/', pattern = 'requants.*\\.csv$', full.names = TRUE),
        plate_map = list.files('../data_processed/', pattern = 'requants.*\\.csv$', full.names = TRUE)) %>%
