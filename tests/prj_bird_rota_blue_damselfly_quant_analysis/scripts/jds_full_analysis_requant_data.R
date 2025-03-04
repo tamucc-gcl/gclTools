@@ -338,7 +338,7 @@ rank_models <- function(models) {
 # Settings
 path_dna_plate_map <-
   paste0(
-    "../data_raw/",
+    "../../../",
     "rbd_edna-extraction_plate-map.xlsx"
   )
 sheet_metadata <- "Plate-map-tidy"
@@ -370,24 +370,8 @@ dna_plate_map <-
   ) %>%
   clean_names() %>%
   mutate (wells = paste0(plate_row, plate_col)) %>%
-  mutate(across(where(is.character), str_to_lower)) %>%
-  mutate (transfer_plate_col = as.numeric(transfer_plate_col)) %>%
-  mutate (requant_plate_id =
-            case_when (
-              !is.na(transfer_plate) ~ transfer_plate,
-              T ~ zymo_plate_id
-              ),
-          requant_plate_row =
-            case_when (
-              !is.na(transfer_plate_row) ~ transfer_plate_row,
-              T ~ zymo_plate_row
-              ),
-          requant_plate_col =
-            case_when (
-              !is.na(transfer_plate_col) ~ transfer_plate_col,
-              T ~ zymo_plate_col
-            )
-  )
+  mutate(across(where(is.character), str_to_lower))
+
 
 all_quant_data <- tibble(data_plate = list.files('../data_raw/', pattern = 'requants.*\\.csv$', full.names = TRUE),
        plate_map = list.files('../data_processed/', pattern = 'requants.*\\.csv$', full.names = TRUE)) %>%
@@ -464,11 +448,15 @@ dna_quants <- investigate_standard_dropping %>%
   unnest(sample_predictions) %>%
 
   select(-wells)  %>%
+  rename (
+    plate_row = sample_row,
+    plate_column = sample_column
+    ) %>% 
   left_join (
     dna_plate_map,
     by = c(
-      "sample_row" = "zymo_plate_row",
-      "sample_column" = "zymo_plate_col",
+      "plate_row" = "zymo_plate_row",
+      "plate_column" = "zymo_plate_col",
       "plate_id" = "zymo_plate_id"
     )
   ) %>%
@@ -476,7 +464,7 @@ dna_quants <- investigate_standard_dropping %>%
     plate_id,
     replicate,
     plate_row,
-    plate_column = plate_col,
+    plate_column,
     quant_row,
     quant_column,
     sample_volume,
@@ -520,7 +508,7 @@ get_prior(bf(ng_per_ul ~ is_control + (1 | ID),
 
 dna_model_bayes <- brm(bf(ng_per_ul ~ is_control + (1 | ID),
                           shape ~ is_control + (1 | ID)),
-                       prior = prior(student_t(3, -1.1, 2.5),
+                       prior = prior(student_t(3, 1.2, 2.5),
                                      class = 'Intercept') +
                          prior(student_t(3, 0, 2.5),
                                      class = 'Intercept',
@@ -740,7 +728,7 @@ ggsave(
   quant_plot,
   file = path_quant_plot,
   width = 10,
-  height = 5,
+  height = 7,
   units = "in",
   dpi = 330)
 
@@ -750,7 +738,7 @@ ggsave(
                        labels = scales::comma_format()),
   file = str_replace(path_quant_plot, 'assessment.png', 'assessment_log.png'),
   width = 10,
-  height = 5,
+  height = 7,
   units = "in",
   dpi = 330)
 
